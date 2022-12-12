@@ -1,0 +1,18 @@
+extends ../../pug/modules/bace
+
+block vars
+    - title = 'Мои отзывы'
+    - path = '../css/my-reviews.css'
+
+block content
+
+    include ../../pug/modules/nav
+
+    include ../../pug/modules/header
+
+    include ../../pug/bank-ideas/my-reviews/page-my-reviews
+
+    include ../../pug/modules/footer
+
+    script(type="module" src="../js/navigation.js")
+    <script src="https://kit.fontawesome.com/72a41cb45f.js" crossorigin="anonymous"></script>

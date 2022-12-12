@@ -1,0 +1,29 @@
+@import 'modules/mixin';
+@import 'modules/variables';
+
+@import 'bank-ideas-style/board-ideas';
+@import './bank-ideas-style/page-navigation-ideas';
+
+.tracked-ideas {
+  padding: 30px;
+  padding-left: 295px;
+  min-height: 100vh;
+
+  &__page-navigation-ideas {
+    margin-bottom: 60px;
+
+    @media (max-width: 576px) {
+      margin-bottom: 46px;
+    }
+  }
+
+  @media (max-width: 992px) {
+    padding-left: 30px;
+  }
+
+  @media (max-width: 576px) {
+    padding: 24px 16px;
+  }
+}
+
+@import 'modules/impotent';

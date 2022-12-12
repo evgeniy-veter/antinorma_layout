@@ -1,0 +1,333 @@
+include popup/create-idea
+include popup/create-reviews
+
+include popup/view-idea
+include popup/view-idea-2
+
+section.all-ideas.padding-left
+  .all-ideas__container 
+    .all-ideas__wrapper
+
+      .page-navigation-ideas
+        ul.page-navigation-ideas__list 
+          li.page-navigation-ideas__item 
+            a.page-navigation-ideas__link(href="./all-ideas.html") Все идеи
+          li.page-navigation-ideas__item 
+            a.page-navigation-ideas__link(href="./tracked-ideas.html") Отслеживаемые идеи
+          li.page-navigation-ideas__item 
+            a.page-navigation-ideas__link(href="./my-reviews.html") Мои отзывы
+
+
+
+      .all-ideas__filter.filter
+
+        .filter__wrapper 
+
+          .filter__side
+
+            .filter__block.filter__autor 
+              span.filter__block_title Автор
+              .filter__select.select 
+                .select__header 
+                  span.select__current Автор
+                  .select__icon
+                    i.fa-solid.fa-angle-down
+                .select__body 
+                  .select__item Евдакимов Сергей
+                  .select__item Авраам Линкольн
+                  .select__item Фёдорова Анна
+
+            .filter__block.filter__city
+              span.filter__block_title Город автора
+              .filter__select.select 
+                .select__header 
+                  span.select__current Город автора
+                  .select__icon 
+                    i.fa-solid.fa-angle-down
+                .select__body 
+                  .select__item Москва
+                  .select__item Санкт-Петербург
+                  .select__item Новосибирск
+
+            .filter__block.filter__category
+              span.filter__block_title Категория
+              .filter__select.select 
+                .select__header 
+                  span.select__current Категория
+                  .select__icon 
+                    i.fa-solid.fa-angle-down
+                .select__body 
+                  .select__item Бизнес
+                  .select__item Маркетинг
+                  .select__item Финансы
+
+          .filter__side
+
+            .filter__block.filter__rating
+              span.filter__block_title Рейтинг
+              .filter__rating-choice.rating
+                .rating__item.rating-active(data-rate="1")
+                  .rating__radio 
+                  span.rating__number 1
+                .rating__item(data-rate="2")
+                  .rating__radio 
+                  span.rating__number 2
+                .rating__item(data-rate="3")
+                  .rating__radio 
+                  span.rating__number 3
+                .rating__item(data-rate="4")
+                  .rating__radio 
+                  span.rating__number 4
+                .rating__item(data-rate="5")
+                  .rating__radio 
+                  span.rating__number 5
+
+            .filter__block.filter__category
+              span.filter__block_title Сортировать по
+              .filter__select.select 
+                .select__header 
+                  span.select__current Сортировать по
+                  .select__icon
+                    i.fa-solid.fa-angle-down
+                .select__body 
+                  .select__item Дате
+                  .select__item Рейтингу
+                  .select__item Алфавиту
+            
+            .filter__block.filter__button-block
+              button.filter__button.button-main Добавить идею
+
+
+
+    .all-ideas__board.board-ideas 
+
+      .board-ideas__wrapper
+
+        .board-ideas__item.idea
+
+          .idea__wrapper 
+            .idea__header 
+              .idea__data 08.09.22
+              .idea__avatar 
+                img(src="../img/ava-1.png", alt="")
+              .idea__rating 
+                span.idea__rating_number 5
+                i.fa-solid.fa-star
+            .idea__body 
+              .idea__user-name Игорь Разинкин
+              button.idea__name(data-view="goodIdea1") Хорошая Идея номер 1
+              .idea__info 
+                .idea__category Категория
+                .idea__business-position онлайн/оффлайн
+            button.idea__buton.secondary__button Подписаться
+
+
+        .bord-ideas__item.idea
+
+          .idea__wrapper 
+            .idea__header 
+              .idea__data 08.09.22
+              .idea__avatar 
+                img(src="../img/ava-1.png", alt="")
+              .idea__rating 
+                span.idea__rating_number 5
+                i.fa-solid.fa-star
+            .idea__body 
+              .idea__user-name Игорь Разинкин
+              button.idea__name(data-view="goodIdea2") Хорошая Идея номер 1
+              .idea__info 
+                .idea__category Категория
+                .idea__business-position онлайн/оффлайн
+            button.idea__buton.secondary__button Подписаться
+            
+
+        .bord-ideas__item.idea
+
+          .idea__wrapper 
+            .idea__header 
+              .idea__data 08.09.22
+              .idea__avatar 
+                img(src="../img/ava-1.png", alt="")
+              .idea__rating 
+                span.idea__rating_number 5
+                i.fa-solid.fa-star
+            .idea__body 
+              .idea__user-name Игорь Разинкин
+              button.idea__name Хорошая Идея номер 1
+              .idea__info 
+                .idea__category Категория
+                .idea__business-position онлайн/оффлайн
+            button.idea__buton.secondary__button Подписаться
+
+
+        .bord-ideas__item.idea
+
+          .idea__wrapper 
+            .idea__header 
+              .idea__data 08.09.22
+              .idea__avatar 
+                img(src="../img/ava-1.png", alt="")
+              .idea__rating 
+                span.idea__rating_number 5
+                i.fa-solid.fa-star
+            .idea__body 
+              .idea__user-name Игорь Разинкин
+              button.idea__name Хорошая Идея номер 1
+              .idea__info 
+                .idea__category Категория
+                .idea__business-position онлайн/оффлайн
+            button.idea__buton.secondary__button Подписаться
+
+
+        .bord-ideas__item.idea
+
+          .idea__wrapper 
+            .idea__header 
+              .idea__data 08.09.22
+              .idea__avatar 
+                img(src="../img/ava-1.png", alt="")
+              .idea__rating 
+                span.idea__rating_number 5
+                i.fa-solid.fa-star
+            .idea__body 
+              .idea__user-name Игорь Разинкин
+              button.idea__name Хорошая Идея номер 1
+              .idea__info 
+                .idea__category Категория
+                .idea__business-position онлайн/оффлайн
+            button.idea__buton.secondary__button Подписаться
+
+
+        .bord-ideas__item.idea
+
+          .idea__wrapper 
+            .idea__header 
+              .idea__data 08.09.22
+              .idea__avatar 
+                img(src="../img/ava-1.png", alt="")
+              .idea__rating 
+                span.idea__rating_number 5
+                i.fa-solid.fa-star
+            .idea__body 
+              .idea__user-name Игорь Разинкин
+              button.idea__name Хорошая Идея номер 1
+              .idea__info 
+                .idea__category Категория
+                .idea__business-position онлайн/оффлайн
+            button.idea__buton.secondary__button Подписаться
+
+
+        .bord-ideas__item.idea
+
+          .idea__wrapper 
+            .idea__header 
+              .idea__data 08.09.22
+              .idea__avatar 
+                img(src="../img/ava-1.png", alt="")
+              .idea__rating 
+                span.idea__rating_number 5
+                i.fa-solid.fa-star
+            .idea__body 
+              .idea__user-name Игорь Разинкин
+              button.idea__name Хорошая Идея номер 1
+              .idea__info 
+                .idea__category Категория
+                .idea__business-position онлайн/оффлайн
+            button.idea__buton.secondary__button Подписаться
+
+
+        .bord-ideas__item.idea
+
+          .idea__wrapper 
+            .idea__header 
+              .idea__data 08.09.22
+              .idea__avatar 
+                img(src="../img/ava-1.png", alt="")
+              .idea__rating 
+                span.idea__rating_number 5
+                i.fa-solid.fa-star
+            .idea__body 
+              .idea__user-name Игорь Разинкин
+              button.idea__name Хорошая Идея номер 1
+              .idea__info 
+                .idea__category Категория
+                .idea__business-position онлайн/оффлайн
+            button.idea__buton.secondary__button Подписаться
+
+
+        .bord-ideas__item.idea
+
+          .idea__wrapper 
+            .idea__header 
+              .idea__data 08.09.22
+              .idea__avatar 
+                img(src="../img/ava-1.png", alt="")
+              .idea__rating 
+                span.idea__rating_number 5
+                i.fa-solid.fa-star
+            .idea__body 
+              .idea__user-name Игорь Разинкин
+              button.idea__name Хорошая Идея номер 1
+              .idea__info 
+                .idea__category Категория
+                .idea__business-position онлайн/оффлайн
+            button.idea__buton.secondary__button Подписаться
+
+
+        .bord-ideas__item.idea
+
+          .idea__wrapper 
+            .idea__header 
+              .idea__data 08.09.22
+              .idea__avatar 
+                img(src="../img/ava-1.png", alt="")
+              .idea__rating 
+                span.idea__rating_number 5
+                i.fa-solid.fa-star
+            .idea__body 
+              .idea__user-name Игорь Разинкин
+              button.idea__name Хорошая Идея номер 1
+              .idea__info 
+                .idea__category Категория
+                .idea__business-position онлайн/оффлайн
+            button.idea__buton.secondary__button Подписаться
+
+
+        .bord-ideas__item.idea
+
+          .idea__wrapper 
+            .idea__header 
+              .idea__data 08.09.22
+              .idea__avatar 
+                img(src="../img/ava-1.png", alt="")
+              .idea__rating 
+                span.idea__rating_number 5
+                i.fa-solid.fa-star
+            .idea__body 
+              .idea__user-name Игорь Разинкин
+              button.idea__name Хорошая Идея номер 1
+              .idea__info 
+                .idea__category Категория
+                .idea__business-position онлайн/оффлайн
+            button.idea__buton.secondary__button Подписаться
+
+
+        .bord-ideas__item.idea
+
+          .idea__wrapper 
+            .idea__header 
+              .idea__data 08.09.22
+              .idea__avatar 
+                img(src="../img/ava-1.png", alt="")
+              .idea__rating 
+                span.idea__rating_number 5
+                i.fa-solid.fa-star
+            .idea__body 
+              .idea__user-name Игорь Разинкин
+              button.idea__name Хорошая Идея номер 1
+              .idea__info 
+                .idea__category Категория
+                .idea__business-position онлайн/оффлайн
+            button.idea__buton.secondary__button Подписаться
+
+      button.board-ideas__more Смотреть еще

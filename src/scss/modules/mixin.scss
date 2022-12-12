@@ -1,0 +1,66 @@
+@import './variables';
+
+// flex-mixin
+
+@mixin flex-sb-center {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin flex-ai-center {
+  display: flex;
+  align-items: center;
+}
+
+@mixin flex-ai-end {
+  display: flex;
+  align-items: end;
+}
+
+// fonts-mixin
+
+@mixin title {
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 17px;
+  color: $black;
+}
+
+@mixin subtitle-white {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 17px;
+  color: $white;
+}
+
+@mixin captions {
+  font-weight: 500;
+  line-height: 15px;
+  color: $black;
+}
+
+@mixin secondary {
+  font-weight: 500;
+  line-height: 15px;
+  color: $gray;
+}
+
+@mixin text {
+  font-weight: 500;
+  line-height: 15px;
+  color: $black;
+}
+
+@mixin button-white {
+  font-weight: 500;
+  line-height: 15px;
+  text-align: center;
+  color: $white;
+}
+
+@mixin button-text {
+  font-weight: 500;
+  line-height: 15px;
+  color: $blue;
+}

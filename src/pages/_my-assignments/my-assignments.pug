@@ -1,0 +1,18 @@
+extends ../../pug/modules/bace
+
+block vars
+    - title = 'Мои задания'
+    - path = '../css/my-assignments.css'
+
+block content
+
+    include ../../pug/modules/nav
+
+    include ../../pug/modules/header
+
+    include ../../pug/my-assignments/my-assignments
+
+    include ../../pug/modules/footer
+
+    script(type="module" src="../js/navigation.js")
+    <script src="https://kit.fontawesome.com/72a41cb45f.js" crossorigin="anonymous"></script>

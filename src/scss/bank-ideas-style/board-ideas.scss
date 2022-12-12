@@ -1,0 +1,140 @@
+.board-ideas {
+  display: flex;
+  flex-direction: column;
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 30px;
+    row-gap: 60px;
+
+    margin-bottom: 30px;
+
+    @media (min-width: 2200px) {
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    @media (max-width: 1200px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (max-width: 768px) {
+      column-gap: 16px;
+      row-gap: 46px;
+    }
+
+    @media (max-width: 576px) {
+      grid-template-columns: repeat(1, 1fr);
+      margin-bottom: 24px;
+    }
+  }
+
+  &__more {
+    @include button-text;
+    // width: 100%;
+  }
+}
+
+.idea {
+
+  transition: 0.4s ease-in-out;
+
+  &:hover {
+    filter: drop-shadow(0px 10px 30px rgba(48, 48, 48, 0.13));
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 20px;
+    border-radius: 6px;
+    background-color: $white;
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+
+  &__data {
+    @include secondary;
+  }
+
+  &__avatar {
+    margin-top: -50px;
+    margin-left: -25px;
+  }
+
+  &__rating {
+
+    &_number {
+      margin-right: 5px;
+      @include secondary;
+    }
+
+    i {
+      font-size: 15px;
+      color: $orahge;
+    }
+  }
+
+  &__body {
+    width: 100%;
+    text-align: center;
+  }
+
+  &__user-name {
+    margin-bottom: 20px;
+    @include secondary;
+  }
+
+  &__name {
+    margin-bottom: 20px;
+    @include title;
+
+    transition: 0.3s ease-in-out;
+
+    &:hover {
+      color: $blue;
+    }
+  }
+
+  &__info {
+    display: flex;
+    margin-bottom: 10px;
+
+    div {
+      padding-top: 7px;
+      padding-bottom: 8px;
+      width: 50%;
+      border-radius: 6px;
+      background-color: $grayBack;
+
+      @include secondary;
+
+      &:not(:last-child) {
+        margin-right: 10px;
+      }
+    }
+
+    @media (max-width: 576px) {
+      display: block;
+
+      div {
+        width: 100%;
+
+        &:not(:last-child) {
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+
+  &__buton {
+    width: 100%;
+  }
+}

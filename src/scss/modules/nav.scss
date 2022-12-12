@@ -1,0 +1,159 @@
+@import 'variables.scss';
+@import 'mixin.scss';
+
+.navigation-block-close {
+  position: fixed;
+  height: 100vh;
+
+  z-index: 211;
+
+  &__header {
+    display: flex;
+    justify-content: center;
+    padding: 16px 16px;
+    background-color: $blackUltra;
+  }
+
+  &__button-open {
+    padding: 5px;
+    text-align: center;
+    font-size: 14px;
+    color: $gray;
+  }
+
+  &__pages {
+    display: flex;
+    justify-content: center;
+  }
+
+  display: none;
+}
+
+.navigation-close {
+  &__icon {
+    color: $grayUltra;
+  }
+}
+
+
+.navigation-block {
+  position: fixed;
+  height: 100vh;
+
+  z-index: 1111;
+
+  transition: 0.6s ease-out;
+
+  &__wrapper {
+    min-width: 265px;
+    height: 100%;
+  }
+
+  &__header {
+    @include flex-sb-center;
+    padding: 16px 20px;
+    background-color: $blackUltra;
+  }
+
+  &__button {
+    padding: 5px;
+    text-align: center;
+    font-size: 14px;
+    color: $gray;
+  }
+
+  &__body {
+    padding-top: 20px;
+    padding-bottom: 30px;
+    height: 100%;
+    background-color: $black;
+  }
+
+  @media (max-width: 992px) {
+    display: none;
+  }
+}
+
+.navigation {
+
+  &__item {
+    padding: 10px 20px;
+    transition: 0.3s ease-in-out;
+
+    &:hover {
+      background-color: $blackUltra;
+    }
+  }
+
+  &__block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    pointer-events: none;
+  }
+
+  &__button {
+    width: 100%;
+  }
+
+  &__sub-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding-left: 28px;
+
+    transform: scaleY(0);
+    height: 0;
+
+    transition: 0.3s ease-in-out;
+
+    // display: none;
+  }
+
+  &__sub-menu-link {
+    font-size: 14px;
+    color: $gray;
+
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__link {
+    @include flex-sb-center;
+  }
+
+  &__link-name {
+    @include flex-ai-center;
+
+    p {
+      padding-top: 2px;
+      font-size: 14px;
+      font-weight: 500;
+      color: $gray;
+    }
+  }
+
+  &__icon {
+    margin-right: 10px;
+    color: $grayUltra;
+  }
+
+  &__marker {
+    font-size: 10px;
+    color: $gray;
+
+    transition: 0.3s ease-in-out;
+  }
+}
+
+.active-flex {
+  margin-top: 10px;
+  transform: scaleY(1);
+  height: 100%;
+}
+
+.marker-down {
+  transform: rotate(90deg);
+}

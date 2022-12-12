@@ -1,0 +1,898 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ru">
+  <head> 
+    <meta charset="UTF-8">
+    <title>Банк идей</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="">
+    <meta property="og:type" content="">
+    <meta property="og:url" content="">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="">
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" href="/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="icon.png">
+    <link rel="stylesheet" href="../css/style.css?_v=20221212183007">
+    <link rel="stylesheet" href="../css/all-ideas.css?_v=20221212183007">
+    <link rel="manifest" href="">
+  </head>
+  <body>
+    <section class="navigation-block-close">
+      <div class="navigation-block-close__header">
+        <button class="navigation-block-close__button-open"><i class="fa-solid fa-angles-right"></i></button>
+      </div>
+      <div class="navigation-block__body">
+        <nav class="navigation-block__pages navigation">
+          <ul class="navigation__list">
+            <li class="navigation__item"><a class="navigation__link" href="#">
+                <div class="container__icon--18 navigation-close__icon"><i class="fa-regular fa-user"></i></div></a></li>
+            <li class="navigation__item"><a class="navigation__link" href="#">
+                <div class="container__icon--18 navigation-close__icon"><i class="fa-regular fa-calendar"></i></div></a></li>
+            <li class="navigation__item"><a class="navigation__link" href="#">
+                <div class="container__icon--18 navigation-close__icon"><i class="fa-solid fa-chart-line"></i></div></a></li>
+            <li class="navigation__item"><a class="navigation__link" href="#">
+                <div class="container__icon--18 navigation-close__icon"><i class="fa-regular fa-address-book"></i></div></a></li>
+            <li class="navigation__item"><a class="navigation__link" href="#">
+                <div class="container__icon--18 navigation-close__icon"><i class="fa-regular fa-file-excel"></i></div></a></li>
+            <li class="navigation__item"><a class="navigation__link" href="#">
+                <div class="container__icon--18 navigation-close__icon"><i class="fa-regular fa-newspaper"></i></div></a></li>
+            <li class="navigation__item"><a class="navigation__link" href="#">
+                <div class="container__icon--18 navigation-close__icon"><i class="fa-regular fa-window-restore"></i></div></a></li>
+            <li class="navigation__item"><a class="navigation__link" href="#">
+                <div class="container__icon--18 navigation-close__icon"><i class="fa-regular fa-lightbulb"></i></div></a></li>
+            <li class="navigation__item"><a class="navigation__link" href="#">
+                <div class="container__icon--18 navigation-close__icon"><i class="fa-solid fa-list-check"></i></div></a></li>
+          </ul>
+        </nav>
+      </div>
+    </section>
+    <section class="navigation-block">
+      <div class="navigation-block__wrapper"> 
+        <div class="navigation-block__header"><a href="#"> <img class="navigation-block__logo" src="../img/logo.svg" alt="logo"></a>
+          <button class="navigation-block__button"> <i class="fa-solid fa-angles-left"></i></button>
+        </div>
+        <div class="navigation-block__body">
+          <nav class="navigation-block__pages navigation">
+            <ul class="navigation__list">
+              <li class="navigation__item"><a class="navigation__link" href="#">
+                  <div class="navigation__link-name">
+                    <div class="container__icon--18 navigation__icon"><i class="fa-regular fa-user"></i></div>
+                    <p>Учетная запись</p>
+                  </div>
+                  <div class="navigation__marker"><i class="fa-solid fa-angle-right"></i></div></a></li>
+              <li class="navigation__item">
+                <button class="navigation__button" data-value="calendar">
+                  <div class="navigation__block">
+                    <div class="navigation__link-name">
+                      <div class="container__icon--18 navigation__icon"><i class="fa-regular fa-calendar"></i></div>
+                      <p>Календарь</p>
+                    </div>
+                    <div class="navigation__marker" data-marker="calendar"><i class="fa-solid fa-angle-right"></i></div>
+                  </div>
+                </button>
+                <div class="navigation__sub-menu" data-target="calendar"><a class="navigation__sub-menu-link" href="#"> Календарь клуба</a><a class="navigation__sub-menu-link" href="#">Календарь ПКМ</a></div>
+              </li>
+              <li class="navigation__item"><a class="navigation__link" href="#">
+                  <div class="navigation__link-name">
+                    <div class="container__icon--18 navigation__icon"><i class="fa-solid fa-chart-line"></i></div>
+                    <p>Аналитика</p>
+                  </div>
+                  <div class="navigation__marker"><i class="fa-solid fa-angle-right"></i></div></a></li>
+              <li class="navigation__item"><a class="navigation__link" href="#">
+                  <div class="navigation__link-name">
+                    <div class="container__icon--18 navigation__icon"><i class="fa-regular fa-address-book"></i></div>
+                    <p>Список пользователей</p>
+                  </div>
+                  <div class="navigation__marker"><i class="fa-solid fa-angle-right"></i></div></a></li>
+              <li class="navigation__item"><a class="navigation__link" href="#">
+                  <div class="navigation__link-name">
+                    <div class="container__icon--18 navigation__icon"><i class="fa-regular fa-file-excel"></i></div>
+                    <p>Список разрешений</p>
+                  </div>
+                  <div class="navigation__marker"><i class="fa-solid fa-angle-right"></i></div></a></li>
+              <li class="navigation__item"><a class="navigation__link" href="#">
+                  <div class="navigation__link-name">
+                    <div class="container__icon--18 navigation__icon"><i class="fa-regular fa-newspaper"></i></div>
+                    <p>Блог и новости</p>
+                  </div>
+                  <div class="navigation__marker"><i class="fa-solid fa-angle-right"></i></div></a></li>
+              <li class="navigation__item"><a class="navigation__link" href="#">
+                  <div class="navigation__link-name">
+                    <div class="container__icon--18 navigation__icon"><i class="fa-regular fa-window-restore"></i></div>
+                    <p>Лента</p>
+                  </div>
+                  <div class="navigation__marker"><i class="fa-solid fa-angle-right"></i></div></a></li>
+              <li class="navigation__item">
+                <button class="navigation__button" data-value="ideas">
+                  <div class="navigation__block">
+                    <div class="navigation__link-name">
+                      <div class="container__icon--18 navigation__icon"><i class="fa-regular fa-lightbulb"></i></div>
+                      <p>Банк идей</p>
+                    </div>
+                    <div class="navigation__marker" data-marker="ideas"><i class="fa-solid fa-angle-right"></i></div>
+                  </div>
+                </button>
+                <div class="navigation__sub-menu" data-target="ideas"><a class="navigation__sub-menu-link" href="#">Мои идеи</a><a class="navigation__sub-menu-link" href="#">Отслеживаемые идеи</a><a class="navigation__sub-menu-link" href="#">Мои отзывы</a></div>
+              </li>
+              <li class="navigation__item"><a class="navigation__link" href="#">
+                  <div class="navigation__link-name">
+                    <div class="container__icon--18 navigation__icon"><i class="fa-solid fa-list-check"></i></div>
+                    <p>Мои задания</p>
+                  </div>
+                  <div class="navigation__marker"><i class="fa-solid fa-angle-right"></i></div></a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </section>
+    <header class="header">
+      <div class="header__wrapper padding-left">
+        <div class="header__title-block"> 
+          <button class="header__burger"><i class="fa-solid fa-bars"></i></button>
+          <h1 class="header__title main-title">Банк идей</h1>
+        </div>
+        <div class="header__general-function general-function">
+          <button class="general-function__button general-function__notifications container__icon--24"> <i class="fa-solid fa-bell"></i></button>
+          <button class="general-function__button general-function__messages container__icon--24"> <i class="fa-regular fa-message"></i></button>
+          <button class="general-function__button general-function__search container__icon--24"> <i class="fa-solid fa-magnifying-glass"></i></button>
+          <button class="general-function__button general-function__user"><img src="../img/user.png" alt=""></button>
+        </div>
+      </div>
+    </header>
+    <div class="hidden"></div>
+    <div class="create-idea">
+      <button class="create-idea__close close container__icon--18"><i class="fa-solid fa-xmark"></i></button>
+      <div class="create-idea__title">Создать идею</div>
+      <form class="create-idea__form"> 
+        <input class="create-idea__input input-field" type="text" placeholder="Придумайте название идеи">
+        <div class="create-idea__select-block">
+          <div class="create-idea__select select"> 
+            <div class="select__header"> <span class="select__current">Категория</span>
+              <div class="select__icon"> <i class="fa-solid fa-angle-down"></i></div>
+            </div>
+            <div class="select__body"> 
+              <div class="select__item">Бизнес</div>
+              <div class="select__item">Маркетинг</div>
+              <div class="select__item">Финансы</div>
+            </div>
+          </div>
+          <div class="create-idea__select select"> 
+            <div class="select__header"> <span class="select__current">Категория</span>
+              <div class="select__icon"> <i class="fa-solid fa-angle-down"></i></div>
+            </div>
+            <div class="select__body"> 
+              <div class="select__item">Бизнес</div>
+              <div class="select__item">Маркетинг</div>
+              <div class="select__item">Финансы</div>
+            </div>
+          </div>
+        </div>
+        <textarea class="create-idea__textarea" name="" cols="30" rows="10" placeholder="Опишите вашу идею"></textarea>
+        <div class="create-idea__subtitle">Создайте до 5 критериев оценки вашей идеи</div>
+        <div class="create-idea__add-criteria">
+          <div class="create-idea__criteria-block">
+            <div class="create-idea__criteria select">Востребованность</div>
+          </div>
+          <button class="create-idea__plus container__icon--24"><i class="fa-solid fa-plus"></i></button>
+        </div>
+        <button class="create-idea__button secondary__button">Опубликовать</button>
+      </form>
+    </div>
+    <div class="create-comment-idea">
+      <div class="create-comment-idea__wrapper"> 
+        <button class="create-comment-idea__back"><i class="fa-solid fa-angle-left"></i></button>
+        <div class="create-comment-idea__block">
+          <div class="create-comment-idea__main-comment main-comment">
+            <div class="main-comment__avatar"> <img src="../img/user.png" alt="ava"></div>
+            <div class="main-comment__body"> 
+              <div class="main-comment__name">Андрей Ярухин</div>
+              <div class="main-comment__message">Какими качествами похож на них?</div>
+              <div class="main-comment__footer"> 
+                <div class="main-comment__data">20 мар в 8:10</div>
+                <button class="main-comment__button">Ответить</button>
+              </div>
+            </div>
+          </div>
+          <div class="create-comment-idea__sub-comment sub-comment">
+            <div class="sub-comment__avatar"> <img src="../img/user.png" alt="ava"></div>
+            <div class="sub-comment__body"> 
+              <div class="sub-comment__name">Андрей Ярухин</div>
+              <div class="sub-comment__message">Какими качествами похож на них?</div>
+              <div class="sub-comment__footer"> 
+                <div class="sub-comment__data">20 мар в 8:10</div>
+                <button class="sub-comment__button">Ответить</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="create-comment-idea__main-comment__block">
+          <div class="create-comment-idea__main-comment main-comment">
+            <div class="main-comment__avatar"> <img src="../img/user.png" alt="ava"></div>
+            <div class="main-comment__body"> 
+              <div class="main-comment__name">Андрей Ярухин</div>
+              <div class="main-comment__message">Какими качествами похож на них?</div>
+              <div class="main-comment__footer"> 
+                <div class="main-comment__data">20 мар в 8:10</div>
+                <button class="main-comment__button">Ответить</button>
+              </div>
+            </div>
+          </div>
+          <div class="create-comment-idea__sub-comment sub-comment">
+            <div class="sub-comment__avatar"> <img src="../img/user.png" alt="ava"></div>
+            <div class="sub-comment__body"> 
+              <div class="sub-comment__name">Андрей Ярухин</div>
+              <div class="sub-comment__message">Какими качествами похож на них?</div>
+              <div class="sub-comment__footer"> 
+                <div class="sub-comment__data">20 мар в 8:10</div>
+                <button class="sub-comment__button">Ответить</button>
+              </div>
+            </div>
+          </div>
+          <div class="create-comment-idea__add-comment"> 
+            <input class="create-comment-idea__input" type="text" placeholder="Ваш комментарий">
+            <button class="create-comment-idea__button secondary__button">Отправить</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="create-reviews">
+      <button class="create-reviews__close close container__icon--18"><i class="fa-solid fa-xmark"></i></button>
+      <div class="create-reviews__title">Отзыв на идею</div>
+      <div class="create-reviews__form">
+        <div class="create-reviews__textarea">
+          <textarea class="create-reviews__plus" name="" placeholder="Расскажите о плюсах"></textarea>
+          <textarea class="create-reviews__minus" name="" placeholder="Расскажите о минусах"></textarea>
+          <textarea class="create-reviews__message" name="" placeholder="Общий комментарий"></textarea>
+        </div>
+        <div class="create-reviews__counters">
+          <div class="create-reviews__counter-item">
+            <div class="create-reviews__area">Востребованность</div>
+            <div class="create-reviews__count"> 
+              <div class="create-reviews__num">3</div>
+              <div class="create-reviews__count-button"> 
+                <button class="create-reviews__btn create-reviews__more"> <i class="fa-solid fa-sort-up"></i></button>
+                <button class="create-reviews__btn create-reviews__less"><i class="fa-solid fa-caret-down"></i></button>
+              </div>
+            </div>
+          </div>
+          <div class="create-reviews__counter-item">
+            <div class="create-reviews__area">Востребованность</div>
+            <div class="create-reviews__count"> 
+              <div class="create-reviews__num">2</div>
+              <div class="create-reviews__count-button"> 
+                <button class="create-reviews__btn create-reviews__more"> <i class="fa-solid fa-sort-up"></i></button>
+                <button class="create-reviews__btn create-reviews__less"><i class="fa-solid fa-caret-down"></i></button>
+              </div>
+            </div>
+          </div>
+          <div class="create-reviews__counter-item">
+            <div class="create-reviews__area">Востребованность</div>
+            <div class="create-reviews__count"> 
+              <div class="create-reviews__num">1</div>
+              <div class="create-reviews__count-button"> 
+                <button class="create-reviews__btn create-reviews__more"> <i class="fa-solid fa-sort-up"></i></button>
+                <button class="create-reviews__btn create-reviews__less"><i class="fa-solid fa-caret-down"></i></button>
+              </div>
+            </div>
+          </div>
+          <div class="create-reviews__counter-item">
+            <div class="create-reviews__area">Востребованность</div>
+            <div class="create-reviews__count"> 
+              <div class="create-reviews__num">4</div>
+              <div class="create-reviews__count-button"> 
+                <button class="create-reviews__btn create-reviews__more"> <i class="fa-solid fa-sort-up"></i></button>
+                <button class="create-reviews__btn create-reviews__less"><i class="fa-solid fa-caret-down"></i></button>
+              </div>
+            </div>
+          </div>
+          <div class="create-reviews__counter-item">
+            <div class="create-reviews__area">Востребованность</div>
+            <div class="create-reviews__count"> 
+              <div class="create-reviews__num">3</div>
+              <div class="create-reviews__count-button"> 
+                <button class="create-reviews__btn create-reviews__more"> <i class="fa-solid fa-sort-up"></i></button>
+                <button class="create-reviews__btn create-reviews__less"><i class="fa-solid fa-caret-down"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="create-reviews__button secondary__button">Отправить</button>
+      </div>
+    </div>
+    <div class="hidden"></div>
+    <div class="view-idea" data-idea="goodIdea1">
+      <button class="view-idea__close close container__icon--18"><i class="fa-solid fa-xmark"></i></button>
+      <button class="view-idea__trash container__icon--18"><i class="fa-solid fa-trash"></i></button>
+      <div class="view-idea__header"> 
+        <h2 class="view-idea__title">Хорошая идея номер 1</h2>
+        <div class="view-idea__right"> 
+          <div class="view-idea__rating"> <span class="view-idea__number">5</span>
+            <div class="view-idea__icon container__icon--18"><i class="fa-solid fa-star"></i></div>
+          </div>
+          <apsn class="view-idea__data">08.09.22</apsn>
+        </div>
+      </div>
+      <div class="view-idea__info"> 
+        <div class="view-idea__user"> <img src="../img/ava-1.png" alt="avatar">
+          <div class="view-idea__user-name">Игорь Разинкин</div>
+        </div>
+        <div class="view-idea__center-block"> 
+          <div class="view-idea__category">Категория</div>
+          <div class="view-idea__meaning">онлайн/оффлайн</div>
+        </div>
+        <button class="view-idea__btn button-main">Написать автору</button>
+      </div>
+      <div class="view-idea__hypothesis hypothesis">
+        <div class="hypothesis__add"> 
+          <input class="input hypothesis__input" type="text" placeholder="Дополнить идею">
+          <button class="hypothesis__button">
+            <div class="hypothesis__icon"><i class="fa-solid fa-location-arrow"></i></div>
+          </button>
+        </div>
+        <div class="hypothesis__board"> 
+          <div class="hypothesis__item">
+            <div class="hypothesis__item_header">
+              <div class="hypothesis__item_title">Гипотиза (08.09.22)</div>
+              <button class="hypothesis__item_icon"> <i class="fa-solid fa-trash"></i></button>
+            </div>
+            <div class="hypothesis__content">
+               Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях.</div>
+          </div>
+          <div class="hypothesis__item">
+            <div class="hypothesis__item_header">
+              <div class="hypothesis__item_title">Гипотиза (08.09.22)</div>
+              <button class="hypothesis__item_icon"> <i class="fa-solid fa-trash"></i></button>
+            </div>
+            <div class="hypothesis__content">
+               В отличии от lorem ipsum, текст рыба на русском языке наполнит любой макет непонятным смыслом и придаст неповторимый колорит советских времен.</div>
+          </div>
+          <div class="hypothesis__item">
+            <div class="hypothesis__item_header">
+              <div class="hypothesis__item_title">Гипотиза (08.09.22)</div>
+              <button class="hypothesis__item_icon"> <i class="fa-solid fa-trash"></i></button>
+            </div>
+            <div class="hypothesis__content">
+               По своей сути рыбатекст является альтернативой традиционному lorem ipsum, который вызывает у некторых людей недоумение при попытках прочитать рыбу текст</div>
+          </div>
+          <div class="hypothesis__item">
+            <div class="hypothesis__item_header">
+              <div class="hypothesis__item_title">Гипотиза (08.09.22)</div>
+              <button class="hypothesis__item_icon"> <i class="fa-solid fa-trash"></i></button>
+            </div>
+            <div class="hypothesis__content">
+               При создании генератора мы использовали небезизвестный универсальный код речей. Текст генерируется абзацами случайным образом от двух до десяти предложений в абзаце, что позволяет сделать текст более привлекательным и живым для визуально-слухового восприятия. Сайт рыбатекст поможет дизайнеру</div>
+          </div>
+        </div>
+      </div>
+      <div class="view-idea__button-block"> 
+        <button class="view-idea__button secondary__button">Подписаться</button>
+        <button class="view-idea__button view-idea__button-reviews additional-button">Оставить отзыв</button>
+      </div>
+      <div class="view-idea__reviews reviews-idea">
+        <div class="reviews-idea__title">Отзывы участников</div>
+        <div class="reviews-idea__board"> 
+          <div class="reviews-idea__item">
+            <div class="reviews-idea__header"> 
+              <div class="reviews-idea__left"> 
+                <div class="reviews-idea__user"> <img src="../img/ava-1.png" alt="avatar">
+                  <div class="reviews-idea__name">
+                     Андрей Ярухин</div>
+                </div>
+              </div>
+              <div class="reviews-idea__right"> <span class="view-idea__number">5</span>
+                <div class="view-idea__icon"><i class="fa-solid fa-star"></i></div>
+              </div>
+            </div>
+            <div class="reviews-idea__block-content">
+              <div class="reviews-idea__plus container__icon--18"><i class="fa-solid fa-square-plus"></i></div>
+              <div class="reviews-idea__content">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях.</div>
+            </div>
+            <div class="reviews-idea__block-content">
+              <div class="reviews-idea__minus container__icon--18"><i class="fa-solid fa-square-minus"></i></div>
+              <div class="reviews-idea__content">В отличии от lorem ipsum, текст рыба на русском языке наполнит любой макет непонятным смыслом и придаст неповторимый колорит советских времен.</div>
+            </div>
+            <div class="reviews-idea__block-content">
+              <div class="reviews-idea__message container__icon--18"><i class="fa-solid fa-message"></i></div>
+              <div class="reviews-idea__content">При создании генератора мы использовали небезизвестный универсальный код речей. Текст генерируется абзацами случайным образом от двух до десяти предложений в абзаце, что позволяет сделать текст более привлекательным и живым для визуально-слухового восприятия. Сайт рыбатекст поможет дизайнеру</div>
+            </div>
+            <div class="reviews-idea__footer"> 
+              <button class="reviews-idea__comment">Комментировать</button>
+              <div class="reviews-idea__like"> 
+                <div class="reviews-idea__like_number">12</div>
+                <div class="reviews-idea__like_icon"><i class="fa-solid fa-heart"></i></div>
+              </div>
+            </div>
+          </div>
+          <div class="reviews-idea__item">
+            <div class="reviews-idea__header"> 
+              <div class="reviews-idea__left"> 
+                <div class="reviews-idea__user"> <img src="../img/ava-1.png" alt="avatar">
+                  <div class="reviews-idea__name">
+                     Андрей Ярухин</div>
+                </div>
+              </div>
+              <div class="reviews-idea__right"> <span class="view-idea__number">5</span>
+                <div class="view-idea__icon"><i class="fa-solid fa-star"></i></div>
+              </div>
+            </div>
+            <div class="reviews-idea__block-content">
+              <div class="reviews-idea__plus"><i class="fa-solid fa-square-plus"></i></div>
+              <div class="reviews-idea__content">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях.</div>
+            </div>
+            <div class="reviews-idea__block-content">
+              <div class="reviews-idea__minus"><i class="fa-solid fa-square-minus"></i></div>
+              <div class="reviews-idea__content">В отличии от lorem ipsum, текст рыба на русском языке наполнит любой макет непонятным смыслом и придаст неповторимый колорит советских времен.</div>
+            </div>
+            <div class="reviews-idea__block-content">
+              <div class="reviews-idea__message"><i class="fa-solid fa-message"></i></div>
+              <div class="reviews-idea__content">При создании генератора мы использовали небезизвестный универсальный код речей. Текст генерируется абзацами случайным образом от двух до десяти предложений в абзаце, что позволяет сделать текст более привлекательным и живым для визуально-слухового восприятия. Сайт рыбатекст поможет дизайнеру</div>
+            </div>
+            <div class="reviews-idea__footer"> 
+              <button class="reviews-idea__comment">Комментировать</button>
+              <div class="reviews-idea__like"> 
+                <div class="reviews-idea__like_number">12</div>
+                <div class="reviews-idea__like_icon"><i class="fa-solid fa-heart"></i></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hidden"></div>
+    <div class="view-idea" data-idea="goodIdea2">
+      <button class="view-idea__close close container__icon--18"><i class="fa-solid fa-xmark"></i></button>
+      <button class="view-idea__trash container__icon--18"><i class="fa-solid fa-trash"></i></button>
+      <div class="view-idea__header"> 
+        <h2 class="view-idea__title">Хорошая идея номер 1</h2>
+        <div class="view-idea__right"> 
+          <div class="view-idea__rating"> <span class="view-idea__number">5</span>
+            <div class="view-idea__icon container__icon--18"><i class="fa-solid fa-star"></i></div>
+          </div>
+          <apsn class="view-idea__data">08.09.22</apsn>
+        </div>
+      </div>
+      <div class="view-idea__info"> 
+        <div class="view-idea__user"> <img src="../img/ava-1.png" alt="avatar">
+          <div class="view-idea__user-name">Игорь Разинкин</div>
+        </div>
+        <div class="view-idea__center-block"> 
+          <div class="view-idea__category">Категория</div>
+          <div class="view-idea__meaning">онлайн/оффлайн</div>
+        </div>
+        <button class="view-idea__btn button-main">Написать автору</button>
+      </div>
+      <div class="view-idea__hypothesis hypothesis">
+        <div class="hypothesis__add"> 
+          <input class="input hypothesis__input" type="text" placeholder="Дополнить идею">
+          <button class="hypothesis__button">
+            <div class="hypothesis__icon"><i class="fa-solid fa-location-arrow"></i></div>
+          </button>
+        </div>
+        <div class="hypothesis__board"> 
+          <div class="hypothesis__item">
+            <div class="hypothesis__item_header">
+              <div class="hypothesis__item_title">Гипотиза (08.09.22)</div>
+              <button class="hypothesis__item_icon"> <i class="fa-solid fa-trash"></i></button>
+            </div>
+            <div class="hypothesis__content">
+               В отличии от lorem ipsum, текст рыба на русском языке наполнит любой макет непонятным смыслом и придаст неповторимый колорит советских времен.</div>
+          </div>
+          <div class="hypothesis__item">
+            <div class="hypothesis__item_header">
+              <div class="hypothesis__item_title">Гипотиза (08.09.22)</div>
+              <button class="hypothesis__item_icon"> <i class="fa-solid fa-trash"></i></button>
+            </div>
+            <div class="hypothesis__content">
+               По своей сути рыбатекст является альтернативой традиционному lorem ipsum, который вызывает у некторых людей недоумение при попытках прочитать рыбу текст</div>
+          </div>
+          <div class="hypothesis__item">
+            <div class="hypothesis__item_header">
+              <div class="hypothesis__item_title">Гипотиза (08.09.22)</div>
+              <button class="hypothesis__item_icon"> <i class="fa-solid fa-trash"></i></button>
+            </div>
+            <div class="hypothesis__content">
+               При создании генератора мы использовали небезизвестный универсальный код речей. Текст генерируется абзацами случайным образом от двух до десяти предложений в абзаце, что позволяет сделать текст более привлекательным и живым для визуально-слухового восприятия. Сайт рыбатекст поможет дизайнеру</div>
+          </div>
+        </div>
+      </div>
+      <div class="view-idea__button-block"> 
+        <button class="view-idea__button secondary__button">Подписаться</button>
+        <button class="view-idea__button additional-button">Оставить отзыв</button>
+      </div>
+      <div class="view-idea__reviews reviews-idea">
+        <div class="reviews-idea__title">Отзывы участников</div>
+        <div class="reviews-idea__board"> 
+          <div class="reviews-idea__item">
+            <div class="reviews-idea__header"> 
+              <div class="reviews-idea__left"> 
+                <div class="reviews-idea__user"> <img src="../img/ava-1.png" alt="avatar">
+                  <div class="reviews-idea__name">
+                     Андрей Ярухин</div>
+                </div>
+              </div>
+              <div class="reviews-idea__right"> <span class="view-idea__number">5</span>
+                <div class="view-idea__icon"><i class="fa-solid fa-star"></i></div>
+              </div>
+            </div>
+            <div class="reviews-idea__block-content">
+              <div class="reviews-idea__plus container__icon--18"><i class="fa-solid fa-square-plus"></i></div>
+              <div class="reviews-idea__content">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях.</div>
+            </div>
+            <div class="reviews-idea__block-content">
+              <div class="reviews-idea__minus container__icon--18"><i class="fa-solid fa-square-minus"></i></div>
+              <div class="reviews-idea__content">В отличии от lorem ipsum, текст рыба на русском языке наполнит любой макет непонятным смыслом и придаст неповторимый колорит советских времен.</div>
+            </div>
+            <div class="reviews-idea__block-content">
+              <div class="reviews-idea__message container__icon--18"><i class="fa-solid fa-message"></i></div>
+              <div class="reviews-idea__content">При создании генератора мы использовали небезизвестный универсальный код речей. Текст генерируется абзацами случайным образом от двух до десяти предложений в абзаце, что позволяет сделать текст более привлекательным и живым для визуально-слухового восприятия. Сайт рыбатекст поможет дизайнеру</div>
+            </div>
+            <div class="reviews-idea__footer"> 
+              <button class="reviews-idea__comment">Комментировать</button>
+              <div class="reviews-idea__like"> 
+                <div class="reviews-idea__like_number">12</div>
+                <div class="reviews-idea__like_icon"><i class="fa-solid fa-heart"></i></div>
+              </div>
+            </div>
+          </div>
+          <div class="reviews-idea__item">
+            <div class="reviews-idea__header"> 
+              <div class="reviews-idea__left"> 
+                <div class="reviews-idea__user"> <img src="../img/ava-1.png" alt="avatar">
+                  <div class="reviews-idea__name">
+                     Андрей Ярухин</div>
+                </div>
+              </div>
+              <div class="reviews-idea__right"> <span class="view-idea__number">5</span>
+                <div class="view-idea__icon"><i class="fa-solid fa-star"></i></div>
+              </div>
+            </div>
+            <div class="reviews-idea__block-content">
+              <div class="reviews-idea__plus"><i class="fa-solid fa-square-plus"></i></div>
+              <div class="reviews-idea__content">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях.</div>
+            </div>
+            <div class="reviews-idea__block-content">
+              <div class="reviews-idea__minus"><i class="fa-solid fa-square-minus"></i></div>
+              <div class="reviews-idea__content">В отличии от lorem ipsum, текст рыба на русском языке наполнит любой макет непонятным смыслом и придаст неповторимый колорит советских времен.</div>
+            </div>
+            <div class="reviews-idea__block-content">
+              <div class="reviews-idea__message"><i class="fa-solid fa-message"></i></div>
+              <div class="reviews-idea__content">При создании генератора мы использовали небезизвестный универсальный код речей. Текст генерируется абзацами случайным образом от двух до десяти предложений в абзаце, что позволяет сделать текст более привлекательным и живым для визуально-слухового восприятия. Сайт рыбатекст поможет дизайнеру</div>
+            </div>
+            <div class="reviews-idea__footer"> 
+              <button class="reviews-idea__comment">Комментировать</button>
+              <div class="reviews-idea__like"> 
+                <div class="reviews-idea__like_number">12</div>
+                <div class="reviews-idea__like_icon"><i class="fa-solid fa-heart"></i></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section class="all-ideas padding-left">
+      <div class="all-ideas__container"> 
+        <div class="all-ideas__wrapper">
+          <div class="page-navigation-ideas">
+            <ul class="page-navigation-ideas__list"> 
+              <li class="page-navigation-ideas__item"> <a class="page-navigation-ideas__link" href="./all-ideas.html">Все идеи</a></li>
+              <li class="page-navigation-ideas__item"> <a class="page-navigation-ideas__link" href="./tracked-ideas.html">Отслеживаемые идеи</a></li>
+              <li class="page-navigation-ideas__item"> <a class="page-navigation-ideas__link" href="./my-reviews.html">Мои отзывы</a></li>
+            </ul>
+          </div>
+          <div class="all-ideas__filter filter">
+            <div class="filter__wrapper"> 
+              <div class="filter__side">
+                <div class="filter__block filter__autor"> <span class="filter__block_title">Автор</span>
+                  <div class="filter__select select"> 
+                    <div class="select__header"> <span class="select__current">Автор</span>
+                      <div class="select__icon"><i class="fa-solid fa-angle-down"></i></div>
+                    </div>
+                    <div class="select__body"> 
+                      <div class="select__item">Евдакимов Сергей</div>
+                      <div class="select__item">Авраам Линкольн</div>
+                      <div class="select__item">Фёдорова Анна</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="filter__block filter__city"><span class="filter__block_title">Город автора</span>
+                  <div class="filter__select select"> 
+                    <div class="select__header"> <span class="select__current">Город автора</span>
+                      <div class="select__icon"> <i class="fa-solid fa-angle-down"></i></div>
+                    </div>
+                    <div class="select__body"> 
+                      <div class="select__item">Москва</div>
+                      <div class="select__item">Санкт-Петербург</div>
+                      <div class="select__item">Новосибирск</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="filter__block filter__category"><span class="filter__block_title">Категория</span>
+                  <div class="filter__select select"> 
+                    <div class="select__header"> <span class="select__current">Категория</span>
+                      <div class="select__icon"> <i class="fa-solid fa-angle-down"></i></div>
+                    </div>
+                    <div class="select__body"> 
+                      <div class="select__item">Бизнес</div>
+                      <div class="select__item">Маркетинг</div>
+                      <div class="select__item">Финансы</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="filter__side">
+                <div class="filter__block filter__rating"><span class="filter__block_title">Рейтинг</span>
+                  <div class="filter__rating-choice rating">
+                    <div class="rating__item rating-active" data-rate="1">
+                      <div class="rating__radio"> </div><span class="rating__number">1</span>
+                    </div>
+                    <div class="rating__item" data-rate="2">
+                      <div class="rating__radio"> </div><span class="rating__number">2</span>
+                    </div>
+                    <div class="rating__item" data-rate="3">
+                      <div class="rating__radio"> </div><span class="rating__number">3</span>
+                    </div>
+                    <div class="rating__item" data-rate="4">
+                      <div class="rating__radio"> </div><span class="rating__number">4</span>
+                    </div>
+                    <div class="rating__item" data-rate="5">
+                      <div class="rating__radio"> </div><span class="rating__number">5</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="filter__block filter__category"><span class="filter__block_title">Сортировать по</span>
+                  <div class="filter__select select"> 
+                    <div class="select__header"> <span class="select__current">Сортировать по</span>
+                      <div class="select__icon"><i class="fa-solid fa-angle-down"></i></div>
+                    </div>
+                    <div class="select__body"> 
+                      <div class="select__item">Дате</div>
+                      <div class="select__item">Рейтингу</div>
+                      <div class="select__item">Алфавиту</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="filter__block filter__button-block">
+                  <button class="filter__button button-main">Добавить идею</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="all-ideas__board board-ideas"> 
+          <div class="board-ideas__wrapper">
+            <div class="board-ideas__item idea">
+              <div class="idea__wrapper"> 
+                <div class="idea__header"> 
+                  <div class="idea__data">08.09.22</div>
+                  <div class="idea__avatar"> <img src="../img/ava-1.png" alt=""></div>
+                  <div class="idea__rating"> <span class="idea__rating_number">5</span><i class="fa-solid fa-star"></i></div>
+                </div>
+                <div class="idea__body"> 
+                  <div class="idea__user-name">Игорь Разинкин</div>
+                  <button class="idea__name" data-view="goodIdea1">Хорошая Идея номер 1</button>
+                  <div class="idea__info"> 
+                    <div class="idea__category">Категория</div>
+                    <div class="idea__business-position">онлайн/оффлайн</div>
+                  </div>
+                </div>
+                <button class="idea__buton secondary__button">Подписаться</button>
+              </div>
+            </div>
+            <div class="bord-ideas__item idea">
+              <div class="idea__wrapper"> 
+                <div class="idea__header"> 
+                  <div class="idea__data">08.09.22</div>
+                  <div class="idea__avatar"> <img src="../img/ava-1.png" alt=""></div>
+                  <div class="idea__rating"> <span class="idea__rating_number">5</span><i class="fa-solid fa-star"></i></div>
+                </div>
+                <div class="idea__body"> 
+                  <div class="idea__user-name">Игорь Разинкин</div>
+                  <button class="idea__name" data-view="goodIdea2">Хорошая Идея номер 1</button>
+                  <div class="idea__info"> 
+                    <div class="idea__category">Категория</div>
+                    <div class="idea__business-position">онлайн/оффлайн</div>
+                  </div>
+                </div>
+                <button class="idea__buton secondary__button">Подписаться</button>
+              </div>
+            </div>
+            <div class="bord-ideas__item idea">
+              <div class="idea__wrapper"> 
+                <div class="idea__header"> 
+                  <div class="idea__data">08.09.22</div>
+                  <div class="idea__avatar"> <img src="../img/ava-1.png" alt=""></div>
+                  <div class="idea__rating"> <span class="idea__rating_number">5</span><i class="fa-solid fa-star"></i></div>
+                </div>
+                <div class="idea__body"> 
+                  <div class="idea__user-name">Игорь Разинкин</div>
+                  <button class="idea__name">Хорошая Идея номер 1</button>
+                  <div class="idea__info"> 
+                    <div class="idea__category">Категория</div>
+                    <div class="idea__business-position">онлайн/оффлайн</div>
+                  </div>
+                </div>
+                <button class="idea__buton secondary__button">Подписаться</button>
+              </div>
+            </div>
+            <div class="bord-ideas__item idea">
+              <div class="idea__wrapper"> 
+                <div class="idea__header"> 
+                  <div class="idea__data">08.09.22</div>
+                  <div class="idea__avatar"> <img src="../img/ava-1.png" alt=""></div>
+                  <div class="idea__rating"> <span class="idea__rating_number">5</span><i class="fa-solid fa-star"></i></div>
+                </div>
+                <div class="idea__body"> 
+                  <div class="idea__user-name">Игорь Разинкин</div>
+                  <button class="idea__name">Хорошая Идея номер 1</button>
+                  <div class="idea__info"> 
+                    <div class="idea__category">Категория</div>
+                    <div class="idea__business-position">онлайн/оффлайн</div>
+                  </div>
+                </div>
+                <button class="idea__buton secondary__button">Подписаться</button>
+              </div>
+            </div>
+            <div class="bord-ideas__item idea">
+              <div class="idea__wrapper"> 
+                <div class="idea__header"> 
+                  <div class="idea__data">08.09.22</div>
+                  <div class="idea__avatar"> <img src="../img/ava-1.png" alt=""></div>
+                  <div class="idea__rating"> <span class="idea__rating_number">5</span><i class="fa-solid fa-star"></i></div>
+                </div>
+                <div class="idea__body"> 
+                  <div class="idea__user-name">Игорь Разинкин</div>
+                  <button class="idea__name">Хорошая Идея номер 1</button>
+                  <div class="idea__info"> 
+                    <div class="idea__category">Категория</div>
+                    <div class="idea__business-position">онлайн/оффлайн</div>
+                  </div>
+                </div>
+                <button class="idea__buton secondary__button">Подписаться</button>
+              </div>
+            </div>
+            <div class="bord-ideas__item idea">
+              <div class="idea__wrapper"> 
+                <div class="idea__header"> 
+                  <div class="idea__data">08.09.22</div>
+                  <div class="idea__avatar"> <img src="../img/ava-1.png" alt=""></div>
+                  <div class="idea__rating"> <span class="idea__rating_number">5</span><i class="fa-solid fa-star"></i></div>
+                </div>
+                <div class="idea__body"> 
+                  <div class="idea__user-name">Игорь Разинкин</div>
+                  <button class="idea__name">Хорошая Идея номер 1</button>
+                  <div class="idea__info"> 
+                    <div class="idea__category">Категория</div>
+                    <div class="idea__business-position">онлайн/оффлайн</div>
+                  </div>
+                </div>
+                <button class="idea__buton secondary__button">Подписаться</button>
+              </div>
+            </div>
+            <div class="bord-ideas__item idea">
+              <div class="idea__wrapper"> 
+                <div class="idea__header"> 
+                  <div class="idea__data">08.09.22</div>
+                  <div class="idea__avatar"> <img src="../img/ava-1.png" alt=""></div>
+                  <div class="idea__rating"> <span class="idea__rating_number">5</span><i class="fa-solid fa-star"></i></div>
+                </div>
+                <div class="idea__body"> 
+                  <div class="idea__user-name">Игорь Разинкин</div>
+                  <button class="idea__name">Хорошая Идея номер 1</button>
+                  <div class="idea__info"> 
+                    <div class="idea__category">Категория</div>
+                    <div class="idea__business-position">онлайн/оффлайн</div>
+                  </div>
+                </div>
+                <button class="idea__buton secondary__button">Подписаться</button>
+              </div>
+            </div>
+            <div class="bord-ideas__item idea">
+              <div class="idea__wrapper"> 
+                <div class="idea__header"> 
+                  <div class="idea__data">08.09.22</div>
+                  <div class="idea__avatar"> <img src="../img/ava-1.png" alt=""></div>
+                  <div class="idea__rating"> <span class="idea__rating_number">5</span><i class="fa-solid fa-star"></i></div>
+                </div>
+                <div class="idea__body"> 
+                  <div class="idea__user-name">Игорь Разинкин</div>
+                  <button class="idea__name">Хорошая Идея номер 1</button>
+                  <div class="idea__info"> 
+                    <div class="idea__category">Категория</div>
+                    <div class="idea__business-position">онлайн/оффлайн</div>
+                  </div>
+                </div>
+                <button class="idea__buton secondary__button">Подписаться</button>
+              </div>
+            </div>
+            <div class="bord-ideas__item idea">
+              <div class="idea__wrapper"> 
+                <div class="idea__header"> 
+                  <div class="idea__data">08.09.22</div>
+                  <div class="idea__avatar"> <img src="../img/ava-1.png" alt=""></div>
+                  <div class="idea__rating"> <span class="idea__rating_number">5</span><i class="fa-solid fa-star"></i></div>
+                </div>
+                <div class="idea__body"> 
+                  <div class="idea__user-name">Игорь Разинкин</div>
+                  <button class="idea__name">Хорошая Идея номер 1</button>
+                  <div class="idea__info"> 
+                    <div class="idea__category">Категория</div>
+                    <div class="idea__business-position">онлайн/оффлайн</div>
+                  </div>
+                </div>
+                <button class="idea__buton secondary__button">Подписаться</button>
+              </div>
+            </div>
+            <div class="bord-ideas__item idea">
+              <div class="idea__wrapper"> 
+                <div class="idea__header"> 
+                  <div class="idea__data">08.09.22</div>
+                  <div class="idea__avatar"> <img src="../img/ava-1.png" alt=""></div>
+                  <div class="idea__rating"> <span class="idea__rating_number">5</span><i class="fa-solid fa-star"></i></div>
+                </div>
+                <div class="idea__body"> 
+                  <div class="idea__user-name">Игорь Разинкин</div>
+                  <button class="idea__name">Хорошая Идея номер 1</button>
+                  <div class="idea__info"> 
+                    <div class="idea__category">Категория</div>
+                    <div class="idea__business-position">онлайн/оффлайн</div>
+                  </div>
+                </div>
+                <button class="idea__buton secondary__button">Подписаться</button>
+              </div>
+            </div>
+            <div class="bord-ideas__item idea">
+              <div class="idea__wrapper"> 
+                <div class="idea__header"> 
+                  <div class="idea__data">08.09.22</div>
+                  <div class="idea__avatar"> <img src="../img/ava-1.png" alt=""></div>
+                  <div class="idea__rating"> <span class="idea__rating_number">5</span><i class="fa-solid fa-star"></i></div>
+                </div>
+                <div class="idea__body"> 
+                  <div class="idea__user-name">Игорь Разинкин</div>
+                  <button class="idea__name">Хорошая Идея номер 1</button>
+                  <div class="idea__info"> 
+                    <div class="idea__category">Категория</div>
+                    <div class="idea__business-position">онлайн/оффлайн</div>
+                  </div>
+                </div>
+                <button class="idea__buton secondary__button">Подписаться</button>
+              </div>
+            </div>
+            <div class="bord-ideas__item idea">
+              <div class="idea__wrapper"> 
+                <div class="idea__header"> 
+                  <div class="idea__data">08.09.22</div>
+                  <div class="idea__avatar"> <img src="../img/ava-1.png" alt=""></div>
+                  <div class="idea__rating"> <span class="idea__rating_number">5</span><i class="fa-solid fa-star"></i></div>
+                </div>
+                <div class="idea__body"> 
+                  <div class="idea__user-name">Игорь Разинкин</div>
+                  <button class="idea__name">Хорошая Идея номер 1</button>
+                  <div class="idea__info"> 
+                    <div class="idea__category">Категория</div>
+                    <div class="idea__business-position">онлайн/оффлайн</div>
+                  </div>
+                </div>
+                <button class="idea__buton secondary__button">Подписаться</button>
+              </div>
+            </div>
+          </div>
+          <button class="board-ideas__more">Смотреть еще</button>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer__wrapper padding-left">
+        <div class="footer__copyright-block"> 
+          <p>© Все права защищены 2022</p>
+        </div>
+      </div>
+    </footer>
+    <script type="module" src="../js/app.js?_v=20221212183007"></script>
+    <script type="module" src="../js/navigation.js?_v=20221212183007"></script>
+    <script type="module" src="../js/select.js?_v=20221212183007"></script>
+    <script type="module" src="../js/rating.js?_v=20221212183007"></script>
+    <script type="module" src="../js/counts.js?_v=20221212183007"></script><script src="https://kit.fontawesome.com/72a41cb45f.js?_v=20221212183007" crossorigin="anonymous"></script>
+  </body>
+</html>

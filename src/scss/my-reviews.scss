@@ -1,0 +1,78 @@
+@import 'modules/mixin';
+@import 'modules/variables';
+
+@import './bank-ideas-style/page-navigation-ideas';
+
+.reviews {
+  padding: 30px;
+  min-height: 100vh;
+
+  &__board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 30px;
+    row-gap: 30px;
+
+    @media (min-width: 2200px) {
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    @media (max-width: 1200px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (max-width: 768px) {
+      column-gap: 16px;
+      row-gap: 16px;
+    }
+
+    @media (max-width: 576px) {
+      grid-template-columns: repeat(1, 1fr);
+      margin-bottom: 24px;
+    }
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    border-radius: 6px;
+    background-color: $white;
+
+    transition: 0.4s ease-in-out;
+
+    &:hover {
+      filter: drop-shadow(0px 10px 30px rgba(48, 48, 48, 0.13));
+    }
+  }
+
+  &__title {
+    margin-bottom: 20px;
+    @include title;
+  }
+
+  &__body {
+    margin-bottom: 20px;
+    font-weight: 500;
+    line-height: 15px;
+    color: $gray;
+  }
+
+  &__link {
+    a {
+      @include button-text;
+    }
+  }
+
+  @media (max-width: 992px) {
+    padding-left: 30px;
+  }
+
+  @media (max-width: 576px) {
+    padding: 24px 16px;
+  }
+}
+
+
+@import 'modules/impotent'

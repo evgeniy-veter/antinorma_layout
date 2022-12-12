@@ -1,0 +1,17 @@
+.footer {
+  &__wrapper {
+    padding: 20px 30px;
+    background-color: $blackUltra;
+
+    @media (max-width: 992px) {
+      padding-left: 30px;
+    }
+  }
+
+  &__copyright-block {
+    font-weight: 500;
+    color: #ffffff;
+  }
+}
+
+@import 'impotent';
