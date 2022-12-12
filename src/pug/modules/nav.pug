@@ -1,0 +1,165 @@
+section.navigation-block-close
+  div.navigation-block-close__header
+    button.navigation-block-close__button-open
+      i.fa-solid.fa-angles-right
+  
+  div.navigation-block__body
+
+    nav.navigation-block__pages.navigation
+
+      ul.navigation__list
+
+        li.navigation__item
+          a.navigation__link(href="#")
+            div.container__icon--18.navigation-close__icon
+              i.fa-regular.fa-user
+
+        li.navigation__item
+          a.navigation__link(href="#")
+            div.container__icon--18.navigation-close__icon
+              i.fa-regular.fa-calendar
+
+        li.navigation__item
+          a.navigation__link(href="#")
+            div.container__icon--18.navigation-close__icon
+              i.fa-solid.fa-chart-line
+
+        li.navigation__item
+          a.navigation__link(href="#")
+            div.container__icon--18.navigation-close__icon
+              i.fa-regular.fa-address-book
+
+        li.navigation__item
+          a.navigation__link(href="#")
+            div.container__icon--18.navigation-close__icon
+              i.fa-regular.fa-file-excel
+
+        li.navigation__item
+          a.navigation__link(href="#")
+            div.container__icon--18.navigation-close__icon
+              i.fa-regular.fa-newspaper
+
+        li.navigation__item
+          a.navigation__link(href="#")
+            div.container__icon--18.navigation-close__icon
+              i.fa-regular.fa-window-restore
+
+        li.navigation__item
+          a.navigation__link(href="#")
+            div.container__icon--18.navigation-close__icon
+              i.fa-regular.fa-lightbulb
+
+        li.navigation__item
+          a.navigation__link(href="#")
+            div.container__icon--18.navigation-close__icon
+              i.fa-solid.fa-list-check
+
+section.navigation-block
+  div.navigation-block__wrapper 
+
+    //- top block whith logo
+
+    div.navigation-block__header
+
+      a(href="#") 
+        img.navigation-block__logo(src="../img/logo.svg", alt="logo")
+      button.navigation-block__button 
+        i.fa-solid.fa-angles-left
+
+    //- general block whith links
+
+    div.navigation-block__body
+
+      nav.navigation-block__pages.navigation
+
+        ul.navigation__list
+
+          li.navigation__item
+            a.navigation__link(href="#")
+              div.navigation__link-name
+                div.container__icon--18.navigation__icon
+                  i.fa-regular.fa-user
+                p Учетная запись
+              div.navigation__marker
+                i.fa-solid.fa-angle-right
+
+          li.navigation__item
+            button.navigation__button(data-value="calendar")
+              .navigation__block
+                div.navigation__link-name
+                  div.container__icon--18.navigation__icon
+                    i.fa-regular.fa-calendar
+                  p Календарь
+                div.navigation__marker(data-marker="calendar")
+                  i.fa-solid.fa-angle-right
+            .navigation__sub-menu(data-target="calendar")
+              a.navigation__sub-menu-link(href="#")  Календарь клуба
+              a.navigation__sub-menu-link(href="#") Календарь ПКМ
+
+          li.navigation__item
+            a.navigation__link(href="#")
+              div.navigation__link-name
+                div.container__icon--18.navigation__icon
+                  i.fa-solid.fa-chart-line
+                p Аналитика
+              div.navigation__marker
+                i.fa-solid.fa-angle-right
+
+          li.navigation__item
+            a.navigation__link(href="#")
+              div.navigation__link-name
+                div.container__icon--18.navigation__icon
+                  i.fa-regular.fa-address-book
+                p Список пользователей
+              div.navigation__marker
+                i.fa-solid.fa-angle-right
+
+          li.navigation__item
+            a.navigation__link(href="#")
+              div.navigation__link-name
+                div.container__icon--18.navigation__icon
+                  i.fa-regular.fa-file-excel
+                p Список разрешений
+              div.navigation__marker
+                i.fa-solid.fa-angle-right
+
+          li.navigation__item
+            a.navigation__link(href="#")
+              div.navigation__link-name
+                div.container__icon--18.navigation__icon
+                  i.fa-regular.fa-newspaper
+                p Блог и новости
+              div.navigation__marker
+                i.fa-solid.fa-angle-right
+
+          li.navigation__item
+            a.navigation__link(href="#")
+              div.navigation__link-name
+                div.container__icon--18.navigation__icon
+                  i.fa-regular.fa-window-restore
+                p Лента
+              div.navigation__marker
+                i.fa-solid.fa-angle-right
+
+          li.navigation__item
+            button.navigation__button(data-value="ideas")
+              .navigation__block
+                div.navigation__link-name
+                  div.container__icon--18.navigation__icon
+                    i.fa-regular.fa-lightbulb
+                  p Банк идей
+                div.navigation__marker(data-marker="ideas")
+                  i.fa-solid.fa-angle-right
+            .navigation__sub-menu(data-target="ideas")
+              a.navigation__sub-menu-link(href="#") Мои идеи
+              a.navigation__sub-menu-link(href="#") Отслеживаемые идеи
+              a.navigation__sub-menu-link(href="#") Мои отзывы
+
+          li.navigation__item
+            a.navigation__link(href="#")
+              div.navigation__link-name
+                div.container__icon--18.navigation__icon
+                  i.fa-solid.fa-list-check
+                p Мои задания
+              div.navigation__marker
+                i.fa-solid.fa-angle-right

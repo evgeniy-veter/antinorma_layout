@@ -1,0 +1,22 @@
+extends ../../pug/modules/bace
+
+block vars
+    - title = 'Банк идей'
+    - path = '../css/all-ideas.css'
+
+block content
+
+    include ../../pug/modules/nav
+
+    include ../../pug/modules/header
+
+    include ../../pug/bank-ideas/all-ideas/page-all-ideas
+
+    include ../../pug/modules/footer
+
+    script(type="module" src="../js/app.js")
+    script(type="module" src="../js/navigation.js")
+    script(type="module" src="../js/select.js")
+    script(type="module" src="../js/rating.js")
+    script(type="module" src="../js/counts.js")
+    <script src="https://kit.fontawesome.com/72a41cb45f.js" crossorigin="anonymous"></script>

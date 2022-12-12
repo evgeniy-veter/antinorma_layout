@@ -1,0 +1,98 @@
+.hidden
+
+.create-idea
+
+  button.create-idea__close.close.container__icon--18
+    i.fa-solid.fa-xmark
+
+  .create-idea__title Создать идею
+  form.create-idea__form 
+    input.create-idea__input.input-field(type="text" placeholder="Придумайте название идеи")
+
+    .create-idea__select-block
+
+        .create-idea__select.select 
+          .select__header 
+            span.select__current Категория
+            .select__icon 
+              i.fa-solid.fa-angle-down
+          .select__body 
+            .select__item Бизнес
+            .select__item Маркетинг
+            .select__item Финансы
+
+        .create-idea__select.select 
+          .select__header 
+            span.select__current Категория
+            .select__icon 
+              i.fa-solid.fa-angle-down
+          .select__body 
+            .select__item Бизнес
+            .select__item Маркетинг
+            .select__item Финансы
+
+    textarea.create-idea__textarea(name="", cols="30", rows="10" placeholder="Опишите вашу идею")
+
+    .create-idea__subtitle Создайте до 5 критериев оценки вашей идеи
+
+    .create-idea__add-criteria
+      .create-idea__criteria-block
+        .create-idea__criteria.select Востребованность
+        //- .create-idea__criteria.select Легкость
+        //- .create-idea__criteria.select Возможность
+        //- .create-idea__criteria.select Статность
+        //- .create-idea__criteria.select Денежность
+      button.create-idea__plus.container__icon--24
+        i.fa-solid.fa-plus
+
+    button.create-idea__button.secondary__button Опубликовать
+
+
+.create-comment-idea
+  .create-comment-idea__wrapper 
+    button.create-comment-idea__back
+      i.fa-solid.fa-angle-left
+    
+    .create-comment-idea__block
+      .create-comment-idea__main-comment.main-comment
+        .main-comment__avatar 
+          img(src="../img/user.png", alt="ava")
+        .main-comment__body 
+          .main-comment__name Андрей Ярухин
+          .main-comment__message Какими качествами похож на них?
+          .main-comment__footer 
+            .main-comment__data 20 мар в 8:10
+            button.main-comment__button Ответить
+      .create-comment-idea__sub-comment.sub-comment
+        .sub-comment__avatar 
+          img(src="../img/user.png", alt="ava")
+        .sub-comment__body 
+          .sub-comment__name Андрей Ярухин
+          .sub-comment__message Какими качествами похож на них?
+          .sub-comment__footer 
+            .sub-comment__data 20 мар в 8:10
+            button.sub-comment__button Ответить
+
+    .create-comment-idea__main-comment__block
+      .create-comment-idea__main-comment.main-comment
+        .main-comment__avatar 
+          img(src="../img/user.png", alt="ava")
+        .main-comment__body 
+          .main-comment__name Андрей Ярухин
+          .main-comment__message Какими качествами похож на них?
+          .main-comment__footer 
+            .main-comment__data 20 мар в 8:10
+            button.main-comment__button Ответить
+      .create-comment-idea__sub-comment.sub-comment
+        .sub-comment__avatar 
+          img(src="../img/user.png", alt="ava")
+        .sub-comment__body 
+          .sub-comment__name Андрей Ярухин
+          .sub-comment__message Какими качествами похож на них?
+          .sub-comment__footer 
+            .sub-comment__data 20 мар в 8:10
+            button.sub-comment__button Ответить
+    
+      .create-comment-idea__add-comment 
+        input.create-comment-idea__input(type="text" placeholder="Ваш комментарий")
+        button.create-comment-idea__button.secondary__button Отправить

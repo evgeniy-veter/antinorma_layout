@@ -1,0 +1,144 @@
+.create-reviews {
+  position: fixed;
+  padding: 50px;
+  width: 540px;
+  border-radius: 6px;
+  background-color: $white;
+
+  left: 50%;
+  transform: translateX(-50%);
+
+  z-index: 110;
+
+  @media(max-width: 768px) {
+    padding: 24px;
+    width: 343px;
+  }
+
+  &__title {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+    @include title;
+  }
+
+  &__textarea {
+    margin-bottom: 20px;
+
+    textarea {
+      padding: 10px;
+      padding-left: 32px;
+      width: 100%;
+      height: 130px;
+      border-radius: 6px;
+      background-color: $grayBack;
+      resize: none;
+
+      &:not(:last-child) {
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  &__plus {
+    background-image: url('../img/plus.svg');
+    background-repeat: no-repeat;
+    background-position: 9px 8px;
+    background-size: 20px 20px;
+  }
+
+  &__minus {
+    background-image: url('../img/minus.svg');
+    background-repeat: no-repeat;
+    background-position: 9px 8px;
+    background-size: 20px 20px;
+  }
+
+  &__message {
+    background-image: url('../img/message.svg');
+    background-repeat: no-repeat;
+    background-position: 9px 9px;
+    background-size: 20px 20px;
+  }
+
+  &__counters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+
+    margin-bottom: 30px;
+  }
+
+  &__counter-item {
+    display: flex;
+  }
+
+  &__area {
+    padding: 9px 10px 8px 10px;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    background-color: $grayBack;
+
+    @include secondary;
+  }
+
+  &__count {
+    display: flex;
+    padding: 6px;
+    padding-right: 8px;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    background-color: #E8E8E8;
+  }
+
+  &__num {
+    display: flex;
+    align-items: center;
+    margin-right: 6px;
+    margin-bottom: 2px;
+    color: #FF0000;
+  }
+
+  &__count-button {
+    display: flex;
+    flex-direction: column;
+
+    button {
+      i {
+        pointer-events: none;
+      }
+    }
+  }
+
+  &__more {
+    margin-bottom: -4px;
+  }
+
+  &__less {
+    margin-top: -4px;
+  }
+
+  &__button {
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 11px;
+  }
+
+  &__close {
+    position: absolute;
+    padding: 30px;
+    top: 0px;
+    right: 0px;
+  }
+
+  display: none;
+}
+
+.active {
+  display: block;
+}
+
+.disabled {
+  opacity: 0.3;
+  pointer-events: none;
+}

@@ -1,0 +1,382 @@
+.hidden {
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  top: 0;
+  right: 0;
+  background-color: $black;
+
+  opacity: 0.8;
+
+  z-index: 100;
+
+  display: none;
+}
+
+.view-idea {
+  position: fixed;
+  padding: 30px;
+  padding-top: 80px;
+  width: 800px;
+  height: 80vh;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 6px;
+  background-color: $white;
+  z-index: 2222;
+
+  overflow-y: scroll;
+
+  @media (max-width: 992px) {
+    width: 80%;
+  }
+
+  @media (max-width: 576px) {
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    overflow-y: scroll;
+    border-radius: 0;
+  }
+
+  &__close {
+    position: absolute;
+    margin-bottom: 20px;
+    top: 30px;
+    right: 65px;
+    padding: 15px;
+    border-radius: 6px;
+    background-color: $grayBack;
+    color: $gray;
+
+    transition: 0.3s ease-in-out;
+
+    &:hover {
+      color: $black;
+    }
+  }
+
+  &__trash {
+    position: absolute;
+    margin-bottom: 20px;
+    top: 30px;
+    right: 30px;
+    padding: 15px;
+    border-radius: 6px;
+    background-color: $grayBack;
+    color: $gray;
+
+    transition: 0.3s ease-in-out;
+
+    &:hover {
+      color: #FF0000;
+    }
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  &__title {
+    @include title;
+  }
+
+  &__right {
+    display: flex;
+    align-items: center;
+  }
+
+  &__rating {
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+  }
+
+  &__number {
+    margin-right: 5px;
+    @include secondary;
+  }
+
+  &__icon {
+    color: $orahge;
+  }
+
+  &__data {
+    @include secondary;
+  }
+
+  &__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 0.5px dashed $gray;
+    border-radius: 6px;
+  }
+
+  &__user {
+    display: flex;
+    align-items: center;
+
+    img {
+      max-width: 40px;
+      margin-right: 10px;
+    }
+  }
+
+  &__user-name {
+    @include secondary;
+  }
+
+  &__center-block {
+    display: flex;
+
+    @media (max-width: 992px) {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+
+  &__category {
+    @include secondary;
+    margin-right: 30px;
+
+    @media (max-width: 992px) {
+      margin-right: 0;
+      margin-bottom: 5px;
+    }
+  }
+
+  &__meaning {
+    @include secondary;
+  }
+
+  &__btn {
+  }
+
+  &__hypothesis {
+  }
+
+  &__button-block {
+    margin-bottom: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+
+    @media (max-width: 992px) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+  display: none;
+}
+
+
+.hypothesis {
+
+  &__add {
+    display: flex;
+    margin-bottom: 10px;
+  }
+
+  &__input {
+    margin-right: 10px;
+    width: 100%;
+  }
+
+  &__button {
+    padding: 6px 9px;
+    background-color: $grayBack;
+    border-radius: 6px;
+
+    transition: 0.3s ease-in-out;
+
+    &:hover {
+      background-color: $blue;
+      .hypothesis__icon {
+        color: $white;
+      }
+    }
+    }
+
+  &__icon {
+    font-size: 18px;
+    color: $blue;
+
+    transition: 0.3s ease-in-out;
+  }
+
+  &__board {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+
+    margin-bottom: 30px;
+
+    @media (max-width: 992px) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+  &__item {
+    padding: 10px;
+    background-color: $grayBack;
+    border-radius: 6px;
+
+    &_header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    &_title {
+      @include captions;
+    }
+
+    &_icon {
+      font-size: 14px;
+      color: $gray;
+    }
+  }
+
+  &__content {
+    @include secondary;
+  }
+}
+
+.input {
+  padding: 8px 10px 7px 10px;
+  background-color: $grayBack;
+  border-radius: 6px;
+
+  &::placeholder {
+    @include secondary;
+  }
+}
+
+
+.reviews-idea {
+  &__title {
+    margin-bottom: 20px;
+    width: 100%;
+
+    @include title;
+
+    text-align: center;
+  }
+
+  &__board {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+
+    @media (max-width: 992px) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+  &__item {
+    padding: 15px;
+    background-color: $grayBack;
+    border-radius: 6px;
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+
+  &__left {
+  }
+
+  &__user {
+    display: flex;
+    align-items: center;
+
+    img {
+      margin-right: 10px;
+      max-width: 40px;
+    }
+  }
+
+  &__name {
+    @include captions;
+  }
+
+  &__right {
+    display: flex;
+  }
+
+  &__block-content {
+    display: flex;
+    margin-bottom: 15px;
+  }
+
+  &__plus {
+    margin-right: 5px;
+    i {
+      color: #43CB92;
+    }
+  }
+
+  &__content {
+    @include secondary;
+  }
+
+  &__minus {
+    margin-right: 5px;
+
+    i {
+      color: #FF0000;
+    }
+  }
+
+  &__message {
+    margin-right: 5px;
+
+    i {
+      color: $gray;
+    }
+  }
+
+  &__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__comment {
+    padding-left: 20px;
+    @include button-text;
+  }
+
+  &__like {
+    display: flex;
+    align-items: center;
+
+    &_number {
+      margin-right: 5px;
+      @include secondary;
+    }
+
+    &_icon {
+      color: #FF0000;
+    }
+  }
+}
+
+.active {
+  display: block;
+}
