@@ -62,6 +62,3 @@ navigationItem.forEach(item => {
     }
   })
 })
-
-
-

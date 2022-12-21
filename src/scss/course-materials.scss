@@ -1,0 +1,256 @@
+@import 'modules/mixin';
+@import 'modules/variables';
+
+.materials {
+  padding-top: 30px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+  min-height: 100vh;
+
+  @media (max-width: 576px) {
+    padding: 24px 16px;
+  }
+
+  &__wrapper {
+    margin-bottom: 30px;
+    padding: 30px;
+    border-radius: 6px;
+    background-color: $white;
+    height: 100%;
+  }
+
+  &__crums {
+    margin-bottom: 30px;
+  }
+
+  &__flex {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+
+    @media (max-width: 1920px) {
+      display: block;
+    }
+  }
+}
+
+.content-materials-block {
+
+  &__header {
+    margin-bottom: 30px;
+  }
+
+  &__summary {
+    display: flex;
+    margin-bottom: 30px;
+
+    @media (max-width: 576px) {
+      flex-direction: column;
+    }
+  }
+
+  &__summary-item {
+    display: flex;
+    align-items: center;
+
+    @media (max-width: 576px) {
+      flex-direction: column;
+    }
+
+    div {
+      margin-right: 10px;
+
+      @media (max-width: 576px) {
+        margin-right: 0;
+        margin-bottom: 10px;
+      }
+    }
+
+    &:not(:last-child) {
+      margin-right: 20px;
+
+      @media (max-width: 576px) {
+        margin-right: 0;
+
+        margin-bottom: 20px;
+      }
+    }
+
+    .icon-clock {
+      color: $red;
+    }
+
+    .icon-list {
+      color: $blue;
+    }
+
+    .icon-user {
+      color: $green;
+    }
+
+    span {
+      @include text;
+    }
+  }
+
+  &__tabs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    @media (max-width: 576px) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+
+    border-radius: 6px;
+    overflow: hidden;
+  }
+
+  &__tab {
+    padding-top: 17px;
+    padding-bottom: 16px;
+
+    background-color: $grayBack;
+    @include button($black);
+
+    transition: 0.3s ease-in-out;
+
+    &:hover {
+      background-color: $blue;
+      color: $white;
+    }
+  }
+}
+
+
+
+.curriculum {
+
+  &__modul {
+    border-radius: 6px;
+    background-color: $grayBack;
+  }
+
+  &__header {
+    padding: 15px 15px 6px 15px;
+    cursor: pointer;
+  }
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+
+    @media (max-width: 576px) {
+      flex-direction: column;
+    }
+
+    i {
+      color: $gray;
+    }
+
+    pointer-events: none
+  }
+
+  &__title {
+    @include title;
+
+    @media (max-width: 576px) {
+      margin-bottom: 10px;
+      text-align: center;
+    }
+  }
+
+  &__progress {
+    height: 2px;
+    width: 100%;
+    border-radius: 100%;
+    background-color: $green;
+  }
+
+  &__body {
+    padding-top: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    display: none;
+  }
+
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media (max-width: 576px) {
+      flex-direction: column;
+    }
+
+    padding: 13px 15px;
+    border-radius: 6px;
+    background-color: $white;
+
+    width: 100%;
+
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__btn-name {
+    display: flex;
+    align-items: center;
+
+    @media (max-width: 576px) {
+      flex-direction: column;
+      margin-bottom: 10px;
+    }
+
+    div {
+      @media (max-width: 576px) {
+        margin-bottom: 15px;
+      }
+    }
+
+    i {
+      margin-right: 10px;
+      color: $blue;
+
+      @media (max-width: 576px) {
+        margin-right: 0;
+      }
+    }
+
+    span {
+      @include title;
+    }
+  }
+
+  &__check {
+    color: $green;
+  }
+
+  display: none;
+}
+
+
+
+.content-none {
+  display: none;
+}
+
+.content-block {
+  display: block;
+}
+
+.active-tab {
+  background-color: $blue;
+  color: $white;
+}
+
+.curriculum-active {
+  .curriculum__body {
+    display: block;
+  }
+}
+
+@import 'modules/impotent'

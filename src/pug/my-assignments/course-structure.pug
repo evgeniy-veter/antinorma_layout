@@ -1,0 +1,134 @@
+section.structure.padding-left
+
+  .structure__crums.crums 
+    ul.crums__list 
+      a.crums__link(href="#")
+        li.crums__item Список курсов
+      a.crums__link(href="#")
+        li.crums__item Название курса
+      a.crums__link(href="#")
+        li.crums__item Материалы курса
+      a.crums__link(href="#")
+        li.crums__item Структура курса
+  
+  .grid-block
+
+    .drid-block__left
+      .structure__wrapper
+        .structure__header
+          .structure__title Выбор ниши
+          .structure__progress 
+            .structure__pas Пройдено
+            .structure__value
+              span 2
+              |/20
+            .progress
+              .progress__line
+
+        .structure__content.content-video__review
+          h2.content-video__title Приветственное видео к распаковщику
+          iframe.content-video__video(src="https://www.youtube.com/embed/6pAkynDPXEc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
+          .content-video__timeline.timeline
+            .timeline__title Timeline
+            ul.timeline__list 
+              li.timeline__item 00:00 – Приветствие
+              li.timeline__item 00:04 – Введение, программа
+              li.timeline__item 01:18 – Откуда взялась идея «Распаковщика», пример из жизни Никиты
+              li.timeline__item 02:27 – 2 большие проблемы нынешнего времени, 2 типа людей
+              li.timeline__item 02:47 – Об огромном количестве талантливых людей в России
+              li.timeline__item 03:17 – Чем мы отличаемся от известных гениев
+              li.timeline__item 03:41 – Коротко о правилах, программе и главные советы:
+              li.timeline__item 04:00 – Правило 1. Твой результат – это ты
+              li.timeline__item 04:57 – Правило 2. Не быть жертвой. Пример про женщину на конференции. Кем я должен стать
+              li.timeline__item 07:30 – Правило 3. Пришёл – иди до конца. Про мотивацию и появление активности. Пример из жизни Никиты про «Клуб 500»
+              li.timeline__item 10:25 Правило 4. Делись успехами и результатом
+              li.timeline__item 11:30 – Правило 5. Будь экологичным
+              li.timeline__item 12:34 – Правило 6. Приходить вовремя на все занятия
+              li.timeline__item 12:38 – Программа: что нас ждёт в «Распаковщике». Введение про гибкость и видоизменения
+              li.timeline__item 13:29 – 6 модулей. Модуль 1 – Подготовительный
+              li.timeline__item 14:37 – Модуль 2 – Как поставить цель и влиять на неё
+              li.timeline__item 14:59 – Модуль 3 – Продажи на бесплатный трафик. Про экспертность
+              li.timeline__item 16:43 – Модуль 4 – Продажи на платный трафик. Таргет и как с ним работать и др.
+              li.timeline__item 17:58 – Модуль 5 – Продажи
+              li.timeline__item 18:35 – Модуль 6 – «А что дальше?». Пример про фотографа
+              li.timeline__item 20:03 – Банды по нишам – команды по направлениям с наставниками
+              li.timeline__item 22:04 – Кураторы – команда, которая будет помогать и поддерживать на протяжении всего Распаковщика
+              li.timeline__item 22:17 – Спринты – Совместные зум созданы, сфокусированные на результат
+              li.timeline__item 23:11 – Итог. Распаковщик – лучшая среда, лучшее место для проработки себя и достижения целей
+              li.timeline__item 23:49 Заключение приветствия. Поехали!
+        
+        button.button-main Завершить
+
+
+    .grid-block__right
+
+      .structure__download.download
+        .download__title 
+          .container__icon--24
+            i.fa-solid.fa-circle-exclamation
+          |Для вас есть домашнее задание
+
+        .download__wrapper
+          .download__files 
+
+            .download__item 
+              a.download__link(href="../../img/ava-1.png" download)
+                .container__icon--18.download__icon
+                  i.fa-solid.fa-file
+                .download__name ava-1.png 
+
+            .download__item 
+              a.download__link(href="../../img/ava-1.png" download)
+                .container__icon--18.download__icon
+                  i.fa-solid.fa-file
+                .download__name ava-1.png 
+
+          button.secondary__button.download__btn Скачать файлы
+
+
+      .structure__comments.comments
+        .comments__wrapper
+          .comments__title 4 комментария
+          .comments__add
+            input.comments__input.input-field(type="text" placeholder="Ваш комментарий")
+            button.comments__button.secondary__button Отправить
+          
+          .comments__block
+            .comments__maint.main-comment
+              .main-comment__avatar 
+                img(src="../img/user.png", alt="ava")
+              .main-comment__body 
+                .main-comment__name Андрей Ярухин
+                .main-comment__message Какими качествами похож на них?
+                .main-comment__footer 
+                  .main-comment__data 20 мар в 8:10
+                  button.main-comment__button Ответить
+            .comments__sub.sub-comment
+              .sub-comment__avatar 
+                img(src="../img/user.png", alt="ava")
+              .sub-comment__body 
+                .sub-comment__name Андрей Ярухин
+                .sub-comment__message Какими качествами похож на них?
+                .sub-comment__footer 
+                  .sub-comment__data 20 мар в 8:10
+                  button.sub-comment__button Ответить
+
+          .comments__block
+            .comments__maint.main-comment
+              .main-comment__avatar 
+                img(src="../img/user.png", alt="ava")
+              .main-comment__body 
+                .main-comment__name Андрей Ярухин
+                .main-comment__message Какими качествами похож на них?
+                .main-comment__footer 
+                  .main-comment__data 20 мар в 8:10
+                  button.main-comment__button Ответить
+            .comments__sub.sub-comment
+              .sub-comment__avatar 
+                img(src="../img/user.png", alt="ava")
+              .sub-comment__body 
+                .sub-comment__name Андрей Ярухин
+                .sub-comment__message Какими качествами похож на них?
+                .sub-comment__footer 
+                  .sub-comment__data 20 мар в 8:10
+                  button.sub-comment__button Ответить

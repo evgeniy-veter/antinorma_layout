@@ -1,0 +1,146 @@
+section.materials.padding-left
+
+  .materials__crums.crums 
+    ul.crums__list 
+      a.crums__link(href="#")
+        li.crums__item Список курсов
+      a.crums__link(href="#")
+        li.crums__item Название курса
+      a.crums__link(href="#")
+        li.crums__item Материалы курса
+
+  .materials__flex
+
+    .materials__wrapper 
+      
+      .materials__content.content-materials-block
+        .content-materials-block__header 
+          .content-materials-block__summary
+            .content-materials-block__summary-item
+              .container__icon--24.icon-clock
+                i.fa-regular.fa-clock
+              span 6 недель
+            .content-materials-block__summary-item 
+              .container__icon--24.icon-list
+                i.fa-solid.fa-list-ul
+              span 20 уроков в модуле
+            .content-materials-block__summary-item 
+              .container__icon--24.icon-user
+                i.fa-regular.fa-user
+              span 89 участников
+
+          .content-materials-block__tabs 
+            button.content-materials-block__tab.review-btn Обзор
+            button.content-materials-block__tab.curriculum-btn Учебный план
+
+        .content-video__review
+          h2.content-video__title Приветственное видео к распаковщику
+          iframe.content-video__video(src="https://www.youtube.com/embed/6pAkynDPXEc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
+          .content-video__timeline.timeline
+            .timeline__title Timeline
+            ul.timeline__list 
+              li.timeline__item 00:00 – Приветствие
+              li.timeline__item 00:04 – Введение, программа
+              li.timeline__item 01:18 – Откуда взялась идея «Распаковщика», пример из жизни Никиты
+              li.timeline__item 02:27 – 2 большие проблемы нынешнего времени, 2 типа людей
+              li.timeline__item 02:47 – Об огромном количестве талантливых людей в России
+              li.timeline__item 03:17 – Чем мы отличаемся от известных гениев
+              li.timeline__item 03:41 – Коротко о правилах, программе и главные советы:
+              li.timeline__item 04:00 – Правило 1. Твой результат – это ты
+              li.timeline__item 04:57 – Правило 2. Не быть жертвой. Пример про женщину на конференции. Кем я должен стать
+              li.timeline__item 07:30 – Правило 3. Пришёл – иди до конца. Про мотивацию и появление активности. Пример из жизни Никиты про «Клуб 500»
+              li.timeline__item 10:25 Правило 4. Делись успехами и результатом
+              li.timeline__item 11:30 – Правило 5. Будь экологичным
+              li.timeline__item 12:34 – Правило 6. Приходить вовремя на все занятия
+              li.timeline__item 12:38 – Программа: что нас ждёт в «Распаковщике». Введение про гибкость и видоизменения
+              li.timeline__item 13:29 – 6 модулей. Модуль 1 – Подготовительный
+              li.timeline__item 14:37 – Модуль 2 – Как поставить цель и влиять на неё
+              li.timeline__item 14:59 – Модуль 3 – Продажи на бесплатный трафик. Про экспертность
+              li.timeline__item 16:43 – Модуль 4 – Продажи на платный трафик. Таргет и как с ним работать и др.
+              li.timeline__item 17:58 – Модуль 5 – Продажи
+              li.timeline__item 18:35 – Модуль 6 – «А что дальше?». Пример про фотографа
+              li.timeline__item 20:03 – Банды по нишам – команды по направлениям с наставниками
+              li.timeline__item 22:04 – Кураторы – команда, которая будет помогать и поддерживать на протяжении всего Распаковщика
+              li.timeline__item 22:17 – Спринты – Совместные зум созданы, сфокусированные на результат
+              li.timeline__item 23:11 – Итог. Распаковщик – лучшая среда, лучшее место для проработки себя и достижения целей
+              li.timeline__item 23:49 Заключение приветствия. Поехали!
+      
+        .content-materials-block__curriculum.curriculum
+          .curriculum__modul 
+            .curriculum__header
+              .curriculum__top
+                .curriculum__title Модуль 1. Введение. Выбор ниши
+                .container__icon--18
+                  i.fa-solid.fa-angle-down
+              .curriculum__progress
+            .curriculum__body 
+              button.curriculum__item
+                .curriculum__btn-name
+                  .container__icon--24
+                    i.fa-regular.fa-file 
+                  span Введение
+                .curriculum__check.container__icon--24
+                  i.fa-solid.fa-check
+
+              button.curriculum__item
+                .curriculum__btn-name
+                  .container__icon--24
+                    i.fa-regular.fa-file 
+                  span Целеполагание
+                .curriculum__check.container__icon--24
+                  i.fa-solid.fa-check
+
+              button.curriculum__item
+                .curriculum__btn-name
+                  .container__icon--24
+                    i.fa-regular.fa-file 
+                  span Wildberries
+                .curriculum__check.container__icon--24
+                  i.fa-solid.fa-check
+
+    .materials__comments.comments
+      .comments__wrapper
+        .comments__title 4 комментария
+        .comments__add
+          input.comments__input.input-field(type="text" placeholder="Ваш комментарий")
+          button.comments__button.secondary__button Отправить
+        
+        .comments__block
+          .comments__maint.main-comment
+            .main-comment__avatar 
+              img(src="../img/user.png", alt="ava")
+            .main-comment__body 
+              .main-comment__name Андрей Ярухин
+              .main-comment__message Какими качествами похож на них?
+              .main-comment__footer 
+                .main-comment__data 20 мар в 8:10
+                button.main-comment__button Ответить
+          .comments__sub.sub-comment
+            .sub-comment__avatar 
+              img(src="../img/user.png", alt="ava")
+            .sub-comment__body 
+              .sub-comment__name Андрей Ярухин
+              .sub-comment__message Какими качествами похож на них?
+              .sub-comment__footer 
+                .sub-comment__data 20 мар в 8:10
+                button.sub-comment__button Ответить
+
+        .comments__block
+          .comments__maint.main-comment
+            .main-comment__avatar 
+              img(src="../img/user.png", alt="ava")
+            .main-comment__body 
+              .main-comment__name Андрей Ярухин
+              .main-comment__message Какими качествами похож на них?
+              .main-comment__footer 
+                .main-comment__data 20 мар в 8:10
+                button.main-comment__button Ответить
+          .comments__sub.sub-comment
+            .sub-comment__avatar 
+              img(src="../img/user.png", alt="ava")
+            .sub-comment__body 
+              .sub-comment__name Андрей Ярухин
+              .sub-comment__message Какими качествами похож на них?
+              .sub-comment__footer 
+                .sub-comment__data 20 мар в 8:10
+                button.sub-comment__button Ответить

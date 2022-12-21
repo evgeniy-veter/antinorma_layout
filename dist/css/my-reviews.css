@@ -33,7 +33,7 @@
 }
 
 .page-navigation-ideas__link:hover {
-  color: #29AFDA;
+  color: #29afda;
 }
 
 .reviews {
@@ -92,9 +92,10 @@
 }
 
 .reviews__link a {
+  font-size: 15px;
   font-weight: 500;
   line-height: 15px;
-  color: #29AFDA;
+  color: #29afda;
 }
 
 .padding-left {

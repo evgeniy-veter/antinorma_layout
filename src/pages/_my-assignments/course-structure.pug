@@ -1,0 +1,18 @@
+extends ../../pug/modules/bace
+
+block vars
+    - title = 'Структура курса'
+    - path = '../css/course-structure.css'
+
+block content
+
+    include ../../pug/modules/nav-structure
+
+    include ../../pug/modules/header
+
+    include ../../pug/my-assignments/course-structure
+
+    include ../../pug/modules/footer
+
+    script(type="module" src="../js/navigation.js")
+    <script src="https://kit.fontawesome.com/72a41cb45f.js" crossorigin="anonymous"></script>

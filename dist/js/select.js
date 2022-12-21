@@ -24,3 +24,19 @@ let select = function () {
 };
 
 select();
+
+
+
+let modul = function () {
+  let curriculumHeader = document.querySelectorAll('.curriculum__header');
+
+  curriculumHeader.forEach(item =>{
+      item.addEventListener('click', selectToggle)
+  });
+
+  function selectToggle () {
+      this.parentElement.classList.toggle('curriculum-active');
+  }
+};
+
+modul();

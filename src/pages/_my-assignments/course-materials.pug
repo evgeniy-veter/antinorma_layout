@@ -1,0 +1,20 @@
+extends ../../pug/modules/bace
+
+block vars
+    - title = 'Название курса'
+    - path = '../css/course-materials.css'
+
+block content
+
+    include ../../pug/modules/nav
+
+    include ../../pug/modules/header
+
+    include ../../pug/my-assignments/course-materials
+
+    include ../../pug/modules/footer
+
+    script(type="module" src="../js/navigation.js")
+    script(type="module" src="../js/tabs.js")
+    script(type="module" src="../js/select.js")
+    <script src="https://kit.fontawesome.com/72a41cb45f.js" crossorigin="anonymous"></script>

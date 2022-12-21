@@ -21,9 +21,10 @@
 }
 
 .board-ideas__more {
+  font-size: 15px;
   font-weight: 500;
   line-height: 15px;
-  color: #29AFDA;
+  color: #29afda;
 }
 
 .idea {
@@ -84,7 +85,7 @@
 
 .idea__rating i {
   font-size: 15px;
-  color: #FFB800;
+  color: #ffb800;
 }
 
 .idea__body {
@@ -111,7 +112,7 @@
 }
 
 .idea__name:hover {
-  color: #29AFDA;
+  color: #29afda;
 }
 
 .idea__info {
@@ -175,7 +176,7 @@
 }
 
 .page-navigation-ideas__link:hover {
-  color: #29AFDA;
+  color: #29afda;
 }
 
 .tracked-ideas {

@@ -1,0 +1,159 @@
+@import 'modules/mixin';
+@import 'modules/variables';
+
+.structure {
+  padding-top: 30px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+  min-height: 100vh;
+
+  @media (max-width: 576px) {
+    padding: 24px 16px;
+  }
+
+  &__crums {
+    margin-bottom: 30px;
+  }
+
+  &__wrapper {
+    padding: 30px;
+    border-radius: 6px;
+    background-color: $white;
+
+    margin-bottom: 30px;
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 30px;
+
+    @media (max-width: 576px) {
+      display: block;
+    }
+  }
+
+  &__title {
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 17px;
+    color: $gray;
+
+    @media (max-width: 576px) {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__progress {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    width: 50%;
+    
+    @media (max-width: 576px) {
+      width: 100%;
+    }
+  }
+
+  &__pas {
+    margin-right: 10px;
+  }
+
+  &__value {
+    margin-right: 10px;
+  }
+
+  &__content {
+    margin-bottom: 30px;
+  }
+}
+
+
+
+.download {
+
+  margin-bottom: 30px;
+
+  &__title {
+    display: flex;
+    align-items: center;
+
+    margin-bottom: 30px;
+
+    @include title;
+
+    div {
+      margin-right: 10px;
+      color: $red;
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media (max-width: 576px) {
+      display: block;
+    }
+
+    padding: 30px;
+    border-radius: 6px;
+    border: 1px solid $green;
+    background-color: $white;
+  }
+
+  &__files {
+    display: flex;
+
+    @media (max-width: 576px) {
+      display: block;
+      margin-bottom: 10px;
+    }
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-right: 10px;
+
+      @media (max-width: 576px) {
+        margin-right: 0;
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+
+    padding: 6px 12px;
+
+    border-radius: 6px;
+    background-color: $black;
+    color: $white;
+  }
+
+  &__icon {
+    margin-right: 10px;
+  }
+
+  &__btn {
+    @media (max-width: 576px) {
+      width: 100%;
+    }
+  }
+
+}
+
+.grid-block {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+
+  @media (max-width: 1920px) {
+    display: block;
+  }
+}

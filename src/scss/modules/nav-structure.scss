@@ -1,0 +1,46 @@
+@import 'variables.scss';
+@import 'mixin.scss';
+
+.nav-structure {
+
+  &__header {
+    margin-bottom: 6px;
+  }
+
+  &__name {
+    max-width: 187px;
+    text-align: left;
+  }
+
+  &__submenu {
+    padding-left: 0;
+  }
+
+  &__module-link {
+    display: flex;
+    align-items: center;
+
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__icon {
+    margin-right: 10px;
+    color: $blue;
+  }
+}
+
+.progress {
+  height: 4px;
+  width: 100%;
+  border-radius: 6px;
+  background-color: #ECFAF4;
+
+  &__line {
+    height: 100%;
+    width: 47%;
+    border-radius: inherit;
+    background-color: $green;
+  }
+}

@@ -110,7 +110,7 @@
 }
 
 .view-idea__icon {
-  color: #FFB800;
+  color: #ffb800;
 }
 
 .view-idea__data {
@@ -205,7 +205,7 @@
 }
 
 .hypothesis__button:hover {
-  background-color: #29AFDA;
+  background-color: #29afda;
 }
 
 .hypothesis__button:hover .hypothesis__icon {
@@ -214,7 +214,7 @@
 
 .hypothesis__icon {
   font-size: 18px;
-  color: #29AFDA;
+  color: #29afda;
   -webkit-transition: 0.3s ease-in-out;
   -o-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
@@ -415,9 +415,10 @@
 
 .reviews-idea__comment {
   padding-left: 20px;
+  font-size: 15px;
   font-weight: 500;
   line-height: 15px;
-  color: #29AFDA;
+  color: #29afda;
 }
 
 .reviews-idea__like {
@@ -467,9 +468,10 @@
 }
 
 .board-ideas__more {
+  font-size: 15px;
   font-weight: 500;
   line-height: 15px;
-  color: #29AFDA;
+  color: #29afda;
 }
 
 .idea {
@@ -530,7 +532,7 @@
 
 .idea__rating i {
   font-size: 15px;
-  color: #FFB800;
+  color: #ffb800;
 }
 
 .idea__body {
@@ -557,7 +559,7 @@
 }
 
 .idea__name:hover {
-  color: #29AFDA;
+  color: #29afda;
 }
 
 .idea__info {
@@ -621,7 +623,7 @@
 }
 
 .page-navigation-ideas__link:hover {
-  color: #29AFDA;
+  color: #29afda;
 }
 
 .create-idea {
@@ -739,7 +741,7 @@
   margin-bottom: 30px;
   padding: 15px;
   border-radius: 6px;
-  background-color: #29AFDA;
+  background-color: #29afda;
   color: #ffffff;
 }
 
@@ -941,9 +943,10 @@
 }
 
 .main-comment__button {
+  font-size: 15px;
   font-weight: 500;
   line-height: 15px;
-  color: #29AFDA;
+  color: #29afda;
 }
 
 .sub-comment {
@@ -1007,9 +1010,10 @@
 }
 
 .sub-comment__button {
+  font-size: 15px;
   font-weight: 500;
   line-height: 15px;
-  color: #29AFDA;
+  color: #29afda;
 }
 
 .create-reviews {
@@ -1333,8 +1337,8 @@
 }
 
 .rating-active .rating__radio {
-  background-color: #FFB800;
-  border: #FFB800;
+  background-color: #ffb800;
+  border: #ffb800;
 }
 
 .padding-left {
