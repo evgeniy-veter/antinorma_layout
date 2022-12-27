@@ -224,7 +224,7 @@
 
 .active-navigation {
   position: fixed;
-  left: -100%;
+  left: -120%;
   display: block;
   -webkit-transition: 0.3s ease-in-out;
   -o-transition: 0.3s ease-in-out;
@@ -243,7 +243,7 @@
 
 @media (max-width: 992px) {
   .padding-left {
-    padding-left: 30px;
+    padding-left: 30px !important;
   }
 }
 
@@ -314,5 +314,9 @@
 
   .curriculum__btn-name i {
     margin-right: 0;
+  }
+
+  .padding-left {
+    padding-left: 16px !important;
   }
 }

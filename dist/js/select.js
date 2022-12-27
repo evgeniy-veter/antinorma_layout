@@ -27,16 +27,17 @@ select();
 
 
 
-let modul = function () {
-  let curriculumHeader = document.querySelectorAll('.curriculum__header');
+let module = function (point, active) {
+  let curriculumHeader = document.querySelectorAll(point);
 
   curriculumHeader.forEach(item =>{
       item.addEventListener('click', selectToggle)
   });
 
   function selectToggle () {
-      this.parentElement.classList.toggle('curriculum-active');
+      this.parentElement.classList.toggle(active);
   }
 };
 
-modul();
+module('.curriculum__header', 'curriculum-active');
+module('.module-block__header', 'module-block-active');

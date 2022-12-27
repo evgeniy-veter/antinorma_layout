@@ -1351,7 +1351,7 @@
 
 .active-navigation {
   position: fixed;
-  left: -100%;
+  left: -120%;
   display: block;
   -webkit-transition: 0.3s ease-in-out;
   -o-transition: 0.3s ease-in-out;
@@ -1431,7 +1431,7 @@
   }
 
   .padding-left {
-    padding-left: 30px;
+    padding-left: 30px !important;
   }
 }
 
@@ -1542,5 +1542,9 @@
 
   .filter__block:not(:last-child) {
     margin-bottom: 10px;
+  }
+
+  .padding-left {
+    padding-left: 16px !important;
   }
 }

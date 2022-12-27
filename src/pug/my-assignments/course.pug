@@ -1,0 +1,113 @@
+section.course.padding-left
+
+  .course__crums.crums 
+    ul.crums__list 
+      a.crums__link(href="#")
+        li.crums__item Список курсов
+      a.crums__link(href="#")
+        li.crums__item Название курса
+
+  .course__wrapper
+  
+    .course__module.module-block
+
+      .module-block__header
+
+        .module-block__left 
+          .module-block__doc.container__icon--24
+            i.fa-regular.fa-file
+          .module-block__title Модуль 2. Целеполагание
+
+        .module-block__right 
+          .module-block__clock.container__icon--24
+            i.fa-regular.fa-clock
+          .module-block__time 1 д - 13 ч - 38 мин
+          .module-block__arrow.container__icon--18
+            i.fa-solid.fa-angle-down
+      
+
+      .module-block__body
+
+        .module-block__menu 
+          ul.module-block__list 
+            li.module-block__item 
+              button(data-tab="?") 1.
+                span Урок в модуле целеполагание
+            li.module-block__item
+              button(data-tab="?") 2.
+                span Урок в модуле целеполагание
+            li.module-block__item
+              button(data-tab="?") 3.
+                span Урок в модуле целеполагание
+        
+
+
+        .module-block__add
+          .module-block__add-message 
+            input.module-block__input(type="text" placeholder="Написать сообщение")
+            button.module-block__send
+              .container__icon--18
+                i.fa-solid.fa-share
+
+          .module-block__add-file
+            .module-block__all-files 
+
+              //- .module-block__file
+              //-   .module-block__link
+              //-     .module-block__doc.container__icon--18
+              //-       i.fa-solid.fa-file
+              //-     .module-block__name ava-1.png
+              //-     button
+              //-       .container__icon--18
+              //-         i.fa-solid.fa-xmark
+
+            input(type="file" id="open-file" accept=".pdf,.rar,.zip")
+            button.module-block__btn.secondary__button Загрузить файл
+
+
+
+        .module-block__comments.comments
+          .comments__wrapper
+
+            .module-block__teacher 
+              img(src="../img/user.png", alt="teacher")
+              span Иван Комин
+
+            .module-block__new-comment
+              input.module-block__input(type="text" placeholder="Написать преподавателю")
+              button.module-block__btn-file.module-block__send-file
+                .container__icon--18
+                  i.fa-solid.fa-file
+              button.module-block__send-comment.module-block__send
+                .container__icon--18
+                  i.fa-solid.fa-share
+            
+            .comments__block
+              .comments__maint.main-comment
+                .main-comment__avatar 
+                  img(src="../img/user.png", alt="ava")
+                .main-comment__body 
+                  .main-comment__name Андрей Ярухин
+                  .main-comment__message Какими качествами похож на них?
+                  .main-comment__file
+                    .module-block__file
+                      .module-block__link
+                        .module-block__doc.container__icon--18
+                          i.fa-solid.fa-file
+                        .module-block__name ava-1.png
+                        button
+                          .container__icon--18
+                            i.fa-solid.fa-xmark
+                  .main-comment__footer 
+                    .main-comment__data 20 мар в 8:10
+                    button.main-comment__button Ответить
+
+              .comments__sub.sub-comment
+                .sub-comment__avatar 
+                  img(src="../img/user.png", alt="ava")
+                .sub-comment__body 
+                  .sub-comment__name Андрей Ярухин
+                  .sub-comment__message Какими качествами похож на них?
+                  .sub-comment__footer 
+                    .sub-comment__data 20 мар в 8:10
+                    button.sub-comment__button Ответить

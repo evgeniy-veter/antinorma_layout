@@ -1,0 +1,363 @@
+@import 'modules/mixin';
+@import 'modules/variables';
+
+.course {
+
+  padding-top: 30px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+  min-height: 100vh;
+
+  @media (max-width: 576px) {
+    padding: 24px 16px;
+  }
+
+  .course__crums {
+    margin-bottom: 30px;
+  }
+
+}
+
+.module-block {
+  position: relative;
+
+  border-radius: 6px;
+  background-color: $white;
+
+  min-height: 100%;
+
+  &__header {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 15px;
+
+    cursor: pointer;
+
+  }
+
+  &__left {
+    
+    display: flex;
+    align-items: center;
+
+    .module-block__doc {
+      color: $blue;
+    }
+
+  }
+
+  &__title {
+    @include button ($black);
+  }
+
+  &__right {
+    display: flex;
+    align-items: center;
+  }
+
+  &__clock {
+
+    margin-right: 10px;
+
+    color: $red;
+
+    @media (max-width: 576px) {
+      display: none;
+    }
+
+  }
+
+  &__time {
+
+    @include text;
+
+    margin-right: 10px;
+
+    @media (max-width: 576px) {
+      display: none;
+    }
+
+  }
+
+  &__arrow {
+    color: $gray;
+  }
+
+  &__body {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+
+    display: none;
+    grid-template-areas: 
+    "M A A A  A A A A  A A A A"
+    "M C C C  C C C C  C C C C"
+    "M C C C  C C C C  C C C C";
+
+    @media (max-width: 768px) {
+      grid-template-areas: 
+      "M M M M  M M M M  M M M M"
+      "A A A A  A A A A  A A A A"
+      "C C C C  C C C C  C C C C";
+    }
+
+  }
+
+  &__menu {
+
+    grid-area: M;
+
+    margin-right: 10px;
+
+    padding: 20px 15px;
+
+    border-radius: 6px;
+    background-color: $grayBack;
+
+    @media (max-width: 768px) {
+
+      margin-right: 0;
+      margin-bottom: 15px;
+
+    }
+
+  }
+
+  &__item {
+
+    @include button ($black);
+
+    button {
+      text-align: left;
+    }
+
+    span {
+      margin-left: 10px;
+
+      transition: 0.3s ease-in-out;
+
+      &:hover {
+        color: $blue;
+      }
+    }
+    
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+
+  }
+
+  &__add {
+
+    grid-area: A;
+
+    margin-bottom: 20px;
+
+    padding: 10px;
+
+    border-radius: 6px;
+    background-color: $grayBack;
+
+  }
+
+  &__add-message {
+
+    position: relative;
+
+    margin-bottom: 5px;
+
+  }
+
+  &__input {
+
+    padding: 15px;
+    padding-right: 46px;
+
+    width: 100%;
+
+    border-radius: 6px;
+    background-color: #E8E8E8;
+
+    &::placeholder {
+      @include secondary;
+    }
+  }
+
+  &__send {
+
+    position: absolute;
+    top: 5px;
+    right: 5px;
+
+    padding: 9px;
+
+    border-radius: 6px;
+    background-color: $blue;
+
+    color: $white;
+
+  }
+
+  &__add-file {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media (max-width: 576px) {
+      display: block;
+    }
+
+  }
+
+  &__all-files {
+
+    display: flex;
+
+    @media (max-width: 576px) {
+
+      display: block;
+
+      margin-bottom: 10px;
+
+    }
+
+  }
+
+  &__file {
+
+    padding: 6px 8px;
+
+    border-radius: 6px;
+    background-color: $black;
+
+    margin-right: 5px;
+
+    @media (max-width: 576px) {
+
+      margin-right: 0;
+      
+      &:not(:last-child) {
+        margin-bottom: 5px;
+      }
+
+    }
+
+  }
+
+  &__link {
+
+    display: flex;
+    align-items: center;
+
+    color: $white;
+
+    button {
+      color: $red;
+    }
+  }
+
+  &__doc {
+    margin-right: 5px;
+  }
+
+  &__name {
+    margin-right: 10px;
+
+    display: block;
+    width: 70px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
+  &__comments {
+    grid-area: C;
+  }
+
+  &__btn {
+
+    @media (max-width: 576px) {
+      width: 100%;
+    }
+
+  }
+
+  &__teacher {
+
+    display: flex;
+    align-items: center;
+
+    margin-bottom: 15px;
+
+    img {
+
+      margin-right: 10px;
+
+      width: 40px;
+
+      border-radius: 100%;
+
+    }
+
+    span {
+      @include text;
+    }
+
+  }
+
+  &__comments {
+
+    .comments__wrapper {
+      padding: 10px;
+      border-radius: 6px;
+      background-color: $grayBack;
+    }
+
+  }
+
+  &__new-comment {
+
+    position: relative;
+
+    margin-bottom: 15px;
+
+  }
+
+  &__send-file {
+    position: absolute;
+    top: 5px;
+    right: 46px;
+
+    padding: 9px;
+
+    border-radius: 6px;
+    background-color: $black;
+
+    color: $white;
+  }
+
+  &__file-remove {
+    div {
+      pointer-events: none;
+    }
+  }
+
+}
+
+input[type=file] {
+  display: none;
+}
+
+.module-block-active {
+
+  .module-block__body {
+    display: grid;
+  }
+
+}
+
+@import 'modules/impotent'

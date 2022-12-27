@@ -135,9 +135,36 @@
   gap: 30px;
 }
 
+.padding-left {
+  padding-left: 295px;
+}
+
+.active {
+  display: block;
+}
+
+.active-navigation {
+  position: fixed;
+  left: -120%;
+  display: block;
+  -webkit-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.active-animation {
+  left: 0;
+}
+
 @media (max-width: 1920px) {
   .grid-block {
     display: block;
+  }
+}
+
+@media (max-width: 992px) {
+  .padding-left {
+    padding-left: 30px !important;
   }
 }
 
@@ -174,5 +201,9 @@
 
   .download__btn {
     width: 100%;
+  }
+
+  .padding-left {
+    padding-left: 16px !important;
   }
 }
