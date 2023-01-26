@@ -1,0 +1,52 @@
+.comment-idea {
+
+  .comments {
+    width: 700px;
+  }
+
+  &__wrapper {
+    position: relative;
+  }
+
+  &__back {
+    padding: 12px 14px;
+    border-radius: 6px;
+    background-color: $white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: color 0.3s ease-in-out;
+
+    font-size: 18px;
+    color: #BDBDBD;
+
+    position: absolute;
+    top: -43px;
+    left: -43px;
+
+    i {
+      pointer-events: none;
+    }
+
+    &:hover {
+      color: $blackUltra;
+    }
+  }
+
+  display: none;
+
+}
+
+.container-idea {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(#1B1B1B, .7);
+  z-index: 11111;
+  top: 0;
+  left: 0;
+}

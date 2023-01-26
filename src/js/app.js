@@ -6,7 +6,6 @@ const body = document.body;
 idea.forEach(btn => {
   btn.addEventListener('click', e => {
     const target = e.target;
-    console.log(target)
     if (target.classList.contains('idea__name')) {
       const path = target.dataset.view;
 
@@ -19,6 +18,47 @@ idea.forEach(btn => {
     }
   })
 })
+
+
+
+const btnComment = document.querySelectorAll('.reviews-idea__comment')
+const backComment = document.querySelectorAll('.comment-idea__back')
+const vommentIdea = document.querySelectorAll('.comment-idea')
+
+btnComment.forEach(btn => {
+  btn.addEventListener('click', e => {
+    const target = e.target
+    const path = target.dataset.btncomment
+
+    document.querySelectorAll('.view-idea').forEach(idea => {
+      idea.classList.remove('active')
+    })
+
+    hidden.classList.remove('active');
+
+    document.querySelectorAll(`[data-vievcomment="${path}"]`).forEach(comment => {
+      comment.closest('.comment-idea').classList.add('active')
+    })
+  })
+})
+
+backComment.forEach(back => {
+  back.addEventListener('click', e => {
+    const target = e.target
+    const path = target.dataset.backcomment
+    console.log(path)
+
+    vommentIdea.forEach(el => {
+      el.classList.remove('active')
+    })
+
+    hidden.classList.add('active');
+    document.querySelectorAll(`[data-idea="${path}"]`).forEach(idea => {
+      idea.closest('.view-idea').classList.add('active')
+    })
+  })
+})
+
 
 
 
@@ -59,10 +99,5 @@ reviewsButton.forEach(btn => {
     })
 
     createReviews.classList.add('active');
-
-    console.log('hi')
   })
 })
-
-
-const addComment = document.querySelectorAll()

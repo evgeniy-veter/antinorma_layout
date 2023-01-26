@@ -3,6 +3,7 @@
 
 .header {
   &__wrapper {
+    position: relative;
     @include flex-sb-center;
     padding: 12px 30px;
     width: 100%;

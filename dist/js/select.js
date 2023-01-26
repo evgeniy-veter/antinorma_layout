@@ -11,7 +11,7 @@ let select = function () {
   });
 
   function selectToggle () {
-      this.parentElement.classList.toggle('select-active');
+    this.parentElement.classList.toggle('select-active');
   }
 
   function selectChoose () {
