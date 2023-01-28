@@ -3,7 +3,7 @@ const reviewBtn = document.querySelector(".review-btn");
 const curriculumBtn = document.querySelector(".curriculum-btn");
 
 const curriculum = document.querySelector(".curriculum");
-const review = document.querySelector(".content-materials-block__review");
+const review = document.querySelector(".content-video__review");
 
 curriculumBtn.addEventListener('click', () => {
   review.classList.add("content-none")

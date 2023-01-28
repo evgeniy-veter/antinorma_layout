@@ -128,6 +128,9 @@
   &__modul {
     border-radius: 6px;
     background-color: $grayBack;
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
   }
 
   &__header {
@@ -166,6 +169,10 @@
     width: 100%;
     border-radius: 100%;
     background-color: $green;
+  }
+
+  [data-progress="name-module"] {
+    width: 60%;
   }
 
   &__body {
